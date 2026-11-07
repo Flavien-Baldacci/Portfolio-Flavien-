@@ -4,6 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Flavien Baldacci, portfolio de scénographie</title>
+<meta name="description" content="Portfolio de Flavien Baldacci, étudiant en scénographie à l’École de design Nantes Atlantique. Projets, CV et recherche de stage.">
+<meta name="author" content="Flavien Baldacci">
+<link rel="canonical" href="https://flavien-baldacci.github.io/Portfolio-Flavien-/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://flavien-baldacci.github.io/Portfolio-Flavien-/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Flavien Baldacci">
+<meta property="og:title" content="Flavien Baldacci, portfolio de scénographie">
+<meta property="og:description" content="Portfolio de Flavien Baldacci, étudiant en scénographie à l’École de design Nantes Atlantique. Projets, CV et recherche de stage.">
+<meta property="og:image" content="https://flavien-baldacci.github.io/Portfolio-Flavien-/images/apercu-partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portrait de Flavien Baldacci devant une fresque murale colorée">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flavien Baldacci, portfolio de scénographie">
+<meta name="twitter:description" content="Portfolio de Flavien Baldacci, étudiant en scénographie à l’École de design Nantes Atlantique. Projets, CV et recherche de stage.">
+<meta name="twitter:image" content="https://flavien-baldacci.github.io/Portfolio-Flavien-/images/apercu-partage.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&family=Magra:wght@400;700&display=swap" rel="stylesheet">
@@ -242,6 +263,21 @@ footer p a{display:inline-block}
 .cvpage,#projpage,.reali{position:relative;overflow:hidden;overflow:clip}
 .cvpage>.wrap,#projpage>.wrap,.reali>.wrap,.reali>.scene{position:relative;z-index:1}
 @media print{.pxbg{display:none!important}}
+
+/* ---- mise en avant : boutons d'action ---- */
+.cta{display:flex;flex-wrap:wrap;gap:.75rem 1rem;margin-top:1.6rem}
+.cta .cvlink{margin-top:0;padding:.65rem 1.2rem;font-size:1.15rem}
+.cvlink.main{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cvlink.main:hover{background:var(--red);border-color:var(--red);color:#fff}
+header.top nav a.navcta{border:2px solid var(--ink);padding:.2rem .8rem;font-weight:700}
+header.top nav a.navcta:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+header.top nav{align-items:center}
+.cta.rv{transition-delay:.2s}
+.appel{max-width:46ch;font-size:1.25rem;margin:0 0 1.2rem}
+#contact .mail{margin:0 0 1.2rem}
+#contact .mail .cvlink{margin-top:0;font-size:1.2rem;padding:.6rem 1.1rem}
+header.top strong,header.top nav a{white-space:nowrap}
+@media (max-width:520px){header.top nav a.hs{display:none}header.top nav{gap:.75rem}}
 </style>
 </head>
 <body>
@@ -252,9 +288,9 @@ footer p a{display:inline-block}
   <header class="top">
     <strong>F. Baldacci</strong>
     <nav aria-label="Navigation principale">
-      <a href="#apropos">À propos</a>
-      <a href="#realisation">Réalisations</a>
-      <a href="#contact">Contact</a>
+      <a class="hs" href="#apropos">À propos</a>
+      <a class="hs" href="#realisation">Réalisations</a>
+      <a class="navcta" href="#contact">Me contacter</a>
     </nav>
   </header>
 
@@ -262,6 +298,7 @@ footer p a{display:inline-block}
     <div>
       <h1 id="nom" class="glitch" data-text="Flavien Baldacci">Flavien Baldacci</h1>
       <p>Étudiant en deuxième année de design scénographie | École de design Nantes Atlantique.</p>
+      <div class="cta"><a class="cvlink main" href="#realisation">Voir mes réalisations</a><a class="cvlink" href="#contact">Me contacter</a></div>
     </div>
     <img class="photo" src="images/portrait.webp" alt="Portrait de Flavien Baldacci" decoding="async">
   </section>
@@ -324,7 +361,8 @@ footer p a{display:inline-block}
 <div class="wrap">
   <footer id="contact">
     <h2>Contact</h2>
-    <p><a href="mailto:f.baldacci@lecolededesign.com">f.baldacci@lecolededesign.com</a></p>
+    <p class="appel">Je suis à la recherche d’un stage : n’hésitez pas à m’écrire.</p>
+    <p class="mail"><a class="cvlink main" href="mailto:f.baldacci@lecolededesign.com">f.baldacci@lecolededesign.com</a></p>
     <p><a href="https://www.instagram.com/flavien_edna/" target="_blank" rel="noopener noreferrer">@flavien_edna</a></p>
     <p><a href="https://www.linkedin.com/in/flavien-baldacci-a30bb836a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     
@@ -469,7 +507,7 @@ footer p a{display:inline-block}
   /* apparition au scroll */
   if(!reduce&&'IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-    [].forEach.call(document.querySelectorAll('.hero h1,.hero p,.photo,.cv .row,.reali .head,#contact h2,#contact p'),function(el){el.classList.add('rv');io.observe(el)});
+    [].forEach.call(document.querySelectorAll('.hero h1,.hero p,.hero .cta,.photo,.cv .row,.reali .head,#contact h2,#contact p'),function(el){el.classList.add('rv');io.observe(el)});
   }
   /* parallaxe de la partie « À propos » */
   var about=document.getElementById('about');
