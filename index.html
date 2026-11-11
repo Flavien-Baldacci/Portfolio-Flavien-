@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flavien Baldacci, portfolio de scénographie</title>
+<link rel="canonical" href="https://flavien-baldacci.github.io/Portfolio-Flavien-/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://flavien-baldacci.github.io/Portfolio-Flavien-/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Flavien Baldacci">
+<meta property="og:title" content="Flavien Baldacci, portfolio de scénographie">
+<meta property="og:description" content="Portfolio de Flavien Baldacci, étudiant en scénographie à l’École de design Nantes Atlantique. Projets, CV et recherche de stage.">
+<meta property="og:image" content="https://flavien-baldacci.github.io/Portfolio-Flavien-/images/apercu-partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portrait de Flavien Baldacci devant une fresque murale colorée">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flavien Baldacci, portfolio de scénographie">
+<meta name="twitter:description" content="Portfolio de Flavien Baldacci, étudiant en scénographie à l’École de design Nantes Atlantique. Projets, CV et recherche de stage.">
+<meta name="twitter:image" content="https://flavien-baldacci.github.io/Portfolio-Flavien-/images/apercu-partage.jpg">
+<meta name="description" content="Portfolio de Flavien Baldacci, étudiant en scénographie à l’École de design Nantes Atlantique. Projets, CV et recherche de stage.">
+<meta name="author" content="Flavien Baldacci">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&family=Magra:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF0F2;--ink:#12151A;--muted:#566070;--line:#C5CCD4;
+  --red:#D62A1F;--turq:#4FD1C1;--blue:#2A5BA8;
+  --display:'Magra','Helvetica Neue',Arial,sans-serif;
+  --text:'Pragati Narrow','Arial Narrow','Helvetica Neue',Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0D1015;--ink:#ECEFF2;--muted:#98A1AD;--line:#2A313B;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0D1015;--ink:#ECEFF2;--muted:#98A1AD;--line:#2A313B;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:1.15rem;line-height:1.5;font-synthesis:none;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+header.top strong{font-family:var(--display);font-size:1.4rem;font-weight:700;letter-spacing:.01em}
+header.top nav{display:flex;gap:1.5rem;font-size:.95rem}
+header.top nav a{text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent}
+header.top nav a:hover{border-color:var(--red)}
+
+.hero{display:flex;align-items:center;gap:clamp(1.5rem,4vw,3.5rem);padding:clamp(2rem,5vw,4rem) 0}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(1.8rem,8.5vw,5rem);line-height:1.1;margin:0 0 .9rem;white-space:nowrap}
+
+.hero p{max-width:46ch;margin:0;font-size:1.35rem}
+.photo{order:-1;flex:none;width:clamp(130px,17vw,200px);aspect-ratio:1;border-radius:50%;object-fit:cover;display:block}
+.photo b{display:block;font-family:var(--display);font-size:1.3rem;color:var(--ink);font-weight:700}
+
+.cv{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(150px,1fr) 3fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--line)}
+.row h2{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1.2;margin:0}
+.row p{margin:0 0 .5rem;max-width:62ch}
+.row p:last-child{margin-bottom:0}
+.todo{color:var(--muted);font-style:italic}
+.row .ttl{font-weight:600}
+.cvlink{display:inline-block;margin-top:.5rem;padding:.45rem .9rem;border:2px solid currentColor;font-weight:700;text-decoration:none}
+.cvlink:hover{background:var(--ink);color:var(--bg)}
+.cvlink:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.row ul{margin:.3rem 0 0;padding-left:1.2rem}
+.job{margin-bottom:1.8rem}
+.job:last-child{margin-bottom:0}
+.jh{display:flex;justify-content:space-between;gap:.25rem 1rem;flex-wrap:wrap}
+.date,.co{color:var(--muted)}
+.co{margin:0 0 .2rem}
+.item{margin-bottom:1.1rem}
+.item:last-child{margin-bottom:0}
+.cvpage .hero p{color:var(--muted)}
+.row.stack{grid-template-columns:1fr;gap:.9rem}
+.row.stack .cols{max-width:760px}
+.row.skills{grid-template-columns:minmax(0,400px) minmax(0,1fr);gap:0}
+.sk h2{margin:0 0 .6rem}
+.sk:first-child{padding-right:1.5rem;border-right:1px solid var(--line)}
+.sk:last-child{padding-left:2.2rem}
+.sk ul{margin:0;padding-left:1.2rem}
+.sk li{padding:.15rem 0}
+.sk li::marker{color:var(--muted)}
+.sk .sub{display:block;color:var(--muted);font-size:1rem;line-height:1.3}
+.sk .tools{list-style:none;padding-left:0}
+.sk .tools li{display:flex;align-items:center;gap:.65rem;padding:.2rem 0}
+.sk .tools li.adobe{flex-direction:column;align-items:flex-start;gap:0}
+.sk .tools li>img{width:30px;height:30px;object-fit:contain;flex:none}
+.sk .ics{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
+.sk .ics img{width:34px;height:34px;display:block}
+.cols{display:grid;grid-template-columns:1fr 1fr}
+.cols ul{margin:0;padding:0 0 0 1.2rem}
+.cols>ul:first-child{padding-right:1.5rem;border-right:1px solid var(--line)}
+.soft{padding-left:2.2rem}
+.soft h3{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1.2;margin:0 0 .5rem}
+.soft .sub{display:block;color:var(--muted);font-size:1rem;line-height:1.3}
+.cols li{padding:.15rem 0}
+.cols li::marker{color:var(--muted)}
+.row.school{position:relative}
+.row.school h2{display:flex;align-items:center;gap:1.3rem}
+.logo{flex:none;display:block;width:41px;height:64px;border-radius:6px;background:#fff;object-fit:contain;position:relative;z-index:2;transition:transform .45s cubic-bezier(.3,1.6,.5,1)}
+.row.school:hover .logo,.row.school:focus-within .logo{transform:rotate(-3deg) scale(1.25)}
+
+.reali{margin-top:clamp(3rem,8vw,6rem)}
+.reali .head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:1.5rem}
+.reali h2{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,4rem);line-height:1;margin:0}
+.scene{--W:clamp(260px,34vw,400px);--R:calc(var(--W) * 1.55);perspective:1700px;padding:2rem 0 1rem;overflow:hidden;touch-action:pan-y}
+.scene.on{cursor:grab}
+.scene.on:active{cursor:grabbing}
+.scene:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+.ring{width:var(--W);margin:0 auto;display:grid;gap:1.25rem}
+.scene.on .ring{display:block;position:relative;transform-style:preserve-3d;transform:translateZ(calc(var(--R) * -1)) rotateY(var(--ang,0deg))}
+.front{background:var(--c);color:var(--on);border-radius:10px;overflow:hidden}
+.back{display:none}
+.scene.on .card{position:absolute;left:0;top:0;width:100%;height:100%;transform-style:preserve-3d;transform:rotateY(var(--a)) translateZ(var(--R))}
+.scene.on .front{height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.scene.on .back{display:block;position:absolute;inset:0;border-radius:10px;background:var(--c);box-shadow:inset 0 0 0 3px rgba(255,255,255,.28);transform:rotateY(180deg);backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.card img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;-webkit-user-drag:none;user-select:none}
+.card .txt{padding:1.1rem 1.25rem 1.4rem}
+.card h3{font-family:var(--display);font-weight:700;font-size:1.35rem;line-height:1.2;margin:0 0 .5rem}
+.card p{margin:0;font-size:1.1rem;line-height:1.4}
+.ctrl{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1rem 0 .5rem}
+.ctrl[hidden],.hint[hidden]{display:none}
+.ctrl button{all:unset;cursor:pointer;padding:.45rem .9rem;border:2px solid currentColor;font-weight:700}
+.ctrl button:hover{background:var(--ink);color:var(--bg)}
+.ctrl button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.hint{text-align:center;color:var(--muted);margin:0;font-size:1rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+footer{padding:clamp(3rem,7vw,5rem) 0 3rem}
+footer h2{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,4rem);line-height:1;margin:0 0 1rem}
+footer p{margin:0 0 .4rem}
+
+@media (max-width:820px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .hero h1{font-size:11.5vw}
+  .photo{width:150px}
+  
+  header.top nav{gap:1rem}
+}
+@media (max-width:600px){.row{grid-template-columns:1fr;gap:.5rem}}
+@media (max-width:600px){.row.skills{grid-template-columns:1fr 1fr}.sk:first-child{padding-right:.8rem}.sk:last-child{padding-left:1rem}}
+@media (prefers-reduced-motion:reduce){.logo{transition:none}}
+
+
+.cvimg{display:block;width:100%;max-width:860px;height:auto;margin:0 auto;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.cvbar{display:flex;justify-content:center;padding:1.5rem 0 1.25rem}
+button.cvlink{font:inherit;font-weight:700;background:none;color:inherit;cursor:pointer;margin-top:0}
+@media print{#home,.cvbar,#cvpage header.top,#cvpage footer{display:none!important}#cvpage .wrap{max-width:none;padding:0}.cvimg{max-width:none;width:100%;box-shadow:none}@page{size:A4;margin:0}}
+
+.scene.on .card{cursor:pointer}
+.card .more{display:inline-block;margin-top:.7rem;font-weight:700;font-size:1rem;border-bottom:2px solid currentColor}
+.proj:not([hidden]){display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:1rem 1.25rem;align-items:start}
+.proj h1{grid-column:1/-1;font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1.1;margin:clamp(1.25rem,3vw,2rem) 0 0}
+.proj .desc{grid-column:1/-1;max-width:62ch;margin:0 0 .5rem;font-size:1.2rem}
+.proj figure{margin:0}
+.proj figure img{display:block;width:100%;height:auto;border-radius:6px}
+.proj figcaption{margin-top:.35rem;color:var(--muted);font-size:.95rem}
+.projfoot{padding:.5rem 0 2rem}
+
+.proj.lay:not([hidden]){grid-template-columns:repeat(6,1fr)}
+.proj.lay figure{grid-column:span 2}
+.proj.lay figure.mat{grid-column:3/span 2}
+.proj.lay figure.plan{grid-column:span 3}
+.proj.lay figure.w4{grid-column:span 4}
+.proj.lay figure.full{grid-column:1/-1}
+.proj.lay figure.mid{align-self:center}
+#p-feutre{grid-auto-flow:dense}
+#p-feutre>figure:nth-of-type(1),#p-feutre>figure:nth-of-type(2){grid-column:1/span 2}
+#p-feutre>figure:nth-of-type(3){grid-column:3/span 2;grid-row:span 2}
+#p-feutre>figure:nth-of-type(4){grid-column:5/span 2;grid-row:span 2}
+#p-feutre>figure:nth-of-type(5){grid-column:2/span 2;align-self:center}
+#p-feutre>figure:nth-of-type(6){grid-column:4/span 2;align-self:center}
+@media(max-width:700px){#p-feutre{grid-auto-flow:row}#p-feutre>figure{grid-column:1/-1!important;grid-row:auto!important}}
+#p-boutique figure:nth-of-type(1){grid-column:1/span 4;grid-row:span 2}
+#p-boutique figure:nth-of-type(2),#p-boutique figure:nth-of-type(3){grid-column:5/span 2}
+#p-boutique figure:nth-of-type(4),#p-boutique figure:nth-of-type(5),#p-boutique figure:nth-of-type(6){grid-column:span 2}
+#p-boutique figure:nth-of-type(7){grid-column:1/-1}
+#p-boutique figure:nth-of-type(8),#p-boutique figure:nth-of-type(9){grid-column:span 3}
+@media(max-width:700px){#p-boutique figure{grid-column:1/-1!important;grid-row:auto!important}}
+@media(max-width:700px){.proj.lay:not([hidden]){grid-template-columns:1fr}.proj.lay figure,.proj.lay figure.mat,.proj.lay figure.plan,.proj.lay figure.w4{grid-column:1/-1}}
+.proj.lay .feat{grid-column:1/-1;display:grid;grid-template-columns:3fr 2fr;gap:1.25rem 2rem;align-items:center}
+.proj.lay .feat figure{grid-column:auto}
+.proj .feat .ftxt{margin:0;font-size:1.15rem;line-height:1.6;max-width:42ch}
+.proj .feat .ftxt p{margin:0 0 .75rem}
+.proj .feat .ftxt ul{margin:0 0 .75rem;padding-left:1.25rem;list-style:disc}
+.proj .feat .ftxt li{margin:0 0 .25rem}
+@media(max-width:700px){.proj.lay .feat{grid-template-columns:1fr}}
+.v3d{grid-column:1/-1;margin:.25rem 0 .75rem}
+.v3d .stage{position:relative;height:clamp(320px,62vh,640px);border-radius:10px;overflow:hidden;background:rgba(127,127,127,.09);border:1px solid rgba(127,127,127,.25)}
+.v3d canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
+.v3d canvas:active{cursor:grabbing}
+.v3d .msg{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:1rem;color:var(--muted);font-size:1rem;pointer-events:none}
+.v3d .bar{display:flex;flex-wrap:wrap;gap:.5rem;margin:.65rem 0 0;align-items:center}
+.v3d .bar button{font:inherit;font-size:.95rem;color:var(--ink);background:transparent;border:1px solid var(--muted);border-radius:999px;padding:.4rem .95rem;cursor:pointer}
+.v3d .bar button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.v3d .hint{color:var(--muted);font-size:.9rem;margin:.5rem 0 0}
+.proj .gal3{grid-column:1/-1;display:flex;justify-content:center;margin:.25rem 0 .75rem}
+.proj .gal3 figure{width:min(100%,1000px)}
+.proj .galref{grid-column:1/-1;display:flex;flex-direction:column;align-items:flex-end;gap:1rem 1.25rem;margin:0 0 .75rem}
+.proj .galref>*{width:min(100%,1050px)}
+.proj .galrow{display:grid;grid-template-columns:934fr 671fr;gap:1rem 1.25rem;align-items:start}
+.proj .galref figure{margin:0}
+.proj .gal2{grid-column:1/-1;display:grid;grid-template-columns:1582fr 1880fr;gap:1rem 1.25rem;align-items:start;margin:0 0 .75rem}
+@media(max-width:700px){.proj .gal2,.proj .galrow{grid-template-columns:1fr}}
+.proj .desc:empty{display:none}
+.proj .grow{grid-column:1/-1;display:grid;grid-template-columns:var(--cols);gap:1rem 1.25rem;align-items:start;margin:0 0 .75rem}
+.proj .grow figure{grid-column:auto}
+@media(max-width:700px){.proj .grow{grid-template-columns:1fr}}
+
+
+/* ---- animations ---- */
+.glitch{position:relative;display:inline-block;cursor:default}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;pointer-events:none}
+.glitch::before{color:var(--red)}.glitch::after{color:var(--turq)}
+.glitch[data-g="1"]::before{opacity:.9;animation:glA .55s steps(1,end) infinite,glCol1 .8s steps(1,end) infinite}
+.glitch[data-g="1"]::after{opacity:.9;animation:glB .55s steps(1,end) infinite,glCol2 .7s steps(1,end) infinite}
+.glitch[data-g="2"]{animation:glJ .22s steps(1,end) infinite}
+.glitch[data-g="2"]::before{opacity:1;animation:glC .2s steps(1,end) infinite,glCol1 .45s steps(1,end) infinite}
+.glitch[data-g="2"]::after{opacity:1;animation:glD .17s steps(1,end) infinite,glCol2 .38s steps(1,end) infinite}
+@keyframes glCol1{0%{color:var(--red)}20%{color:#F4B71D}40%{color:var(--blue)}60%{color:#B14AED}80%{color:var(--turq)}100%{color:#FF2E93}}
+@keyframes glCol2{0%{color:var(--turq)}25%{color:#FF2E93}50%{color:#F4B71D}75%{color:#B14AED}100%{color:var(--blue)}}
+@keyframes glJ{0%{transform:translate(0,0) skewX(0)}20%{transform:translate(-3px,1px) skewX(-4deg)}40%{transform:translate(3px,-1px) skewX(3deg)}60%{transform:translate(-2px,0) skewX(0)}80%{transform:translate(2px,1px) skewX(5deg)}100%{transform:translate(0,0)}}
+@keyframes glC{0%{clip-path:inset(5% 0 70% 0);transform:translate(-8px,0)}15%{clip-path:inset(50% 0 20% 0);transform:translate(9px,0)}30%{clip-path:inset(25% 0 45% 0);transform:translate(-6px,2px)}45%{clip-path:inset(75% 0 2% 0);transform:translate(7px,0)}60%{clip-path:inset(0 0 85% 0);transform:translate(-9px,0)}75%{clip-path:inset(38% 0 35% 0);transform:translate(6px,-2px)}100%{clip-path:inset(60% 0 12% 0);transform:translate(-5px,0)}}
+@keyframes glD{0%{clip-path:inset(65% 0 8% 0);transform:translate(9px,0)}20%{clip-path:inset(10% 0 62% 0);transform:translate(-8px,1px)}40%{clip-path:inset(42% 0 28% 0);transform:translate(7px,0)}60%{clip-path:inset(85% 0 0 0);transform:translate(-9px,0)}80%{clip-path:inset(20% 0 55% 0);transform:translate(6px,-1px)}100%{clip-path:inset(55% 0 20% 0);transform:translate(-6px,0)}}
+@keyframes glA{0%{clip-path:inset(8% 0 62% 0);transform:translate(-2px,0)}20%{clip-path:inset(55% 0 14% 0);transform:translate(2px,0)}40%{clip-path:inset(30% 0 42% 0);transform:translate(-1px,1px)}60%{clip-path:inset(72% 0 4% 0);transform:translate(2px,0)}80%{clip-path:inset(0 0 82% 0);transform:translate(-2px,0)}100%{clip-path:inset(42% 0 34% 0);transform:translate(1px,0)}}
+@keyframes glB{0%{clip-path:inset(60% 0 10% 0);transform:translate(2px,0)}25%{clip-path:inset(12% 0 60% 0);transform:translate(-2px,0)}50%{clip-path:inset(40% 0 30% 0);transform:translate(1px,-1px)}75%{clip-path:inset(80% 0 0 0);transform:translate(-2px,0)}100%{clip-path:inset(22% 0 52% 0);transform:translate(2px,0)}}
+.mag{display:inline-block;will-change:transform}
+footer p a{display:inline-block}
+.about{position:relative;overflow:hidden;overflow:clip}
+.about>.wrap{position:relative;z-index:1}
+.pxbg{position:absolute;inset:0;pointer-events:none;z-index:0}
+.pxbg i{position:absolute;display:block;width:8px;height:var(--h);border-radius:99px;rotate:var(--r);background:linear-gradient(90deg,var(--c) 0,#fff 50%,var(--c) 100%);box-shadow:0 0 calc(8px*var(--g,1)) calc(2px*var(--g,1)) var(--c),0 0 calc(28px*var(--g,1)) calc(6px*var(--g,1)) var(--c),0 0 calc(70px*var(--g,1)) calc(14px*var(--g,1)) var(--c),0 0 calc(150px*var(--g,1)) calc(30px*var(--g,1)) var(--c),0 0 calc(280px*var(--g,1)) calc(52px*var(--g,1)) color-mix(in srgb,var(--c) calc(70%*var(--k,1)),transparent),0 0 calc(420px*var(--g,1)) calc(80px*var(--g,1)) color-mix(in srgb,var(--c) calc(40%*var(--k,1)),transparent);opacity:1;animation:led var(--t,5s) linear infinite}
+.about,.reali{overflow:visible;overflow-x:clip}
+.pxwrap{--pt:440px;--pb:440px;position:absolute;left:0;right:0;top:calc(var(--pt) * -1);bottom:calc(var(--pb) * -1);pointer-events:none;z-index:0}
+.pxwrap>.pxbg{inset:var(--pt) 0 var(--pb) 0}
+.pxwrap.pa{-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 520px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 520px),transparent 100%)}
+.pxwrap.pr{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 520px,#000 calc(100% - 520px),transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 520px,#000 calc(100% - 520px),transparent 100%)}
+.pxbg i.cull{display:none}
+.pxbg i:nth-child(4n+1){--g:.55;--k:.7}
+.pxbg i:nth-child(5n+2){--g:1.4}
+.pxbg i:nth-child(7n+3){--g:.8;--k:.8}
+@keyframes led{0%,44%,52%,100%{opacity:1}46%{opacity:.4}48%{opacity:1}50%{opacity:.5}}
+@media (max-width:700px){.pxbg i{height:calc(var(--h)*.6)}}
+@media (prefers-reduced-motion:reduce){.pxbg i{animation:none}}
+.rv{opacity:0;translate:0 28px;transition:opacity .8s ease,translate .8s cubic-bezier(.2,.7,.2,1),scale .8s cubic-bezier(.2,.7,.2,1)}
+.photo.rv{scale:.86}
+.hero p.rv{transition-delay:.12s}.photo.rv{transition-delay:.2s}
+.rv.in{opacity:1;translate:none;scale:none}
+@media (prefers-reduced-motion:reduce){
+  .glitch::before,.glitch::after{display:none!important}
+  .card .front{transform:none!important}
+  .rv{opacity:1!important;translate:none!important;scale:none!important;transition:none!important}
+}
+.card .front{transition:transform .25s ease-out,box-shadow .3s;will-change:transform}
+.card:hover .front{box-shadow:0 26px 44px -24px rgba(0,0,0,.55)}
+.card .glitch::before{color:var(--on)}
+.card .glitch::after{color:color-mix(in srgb,var(--on) 45%,var(--c))}
+#glt{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;pointer-events:none;overflow:hidden;transition:opacity .2s ease,visibility 0s .2s}
+#glt.on{opacity:1;visibility:visible;pointer-events:auto;transition:none}
+#glt:not(.on) .gb{animation-play-state:paused}
+#glt .gb{position:absolute;left:-30px;width:calc(100% + 60px);background:var(--c);box-shadow:0 0 14px var(--c),0 0 36px var(--c);opacity:.9;animation:gB1 .5s steps(1,end) infinite}
+#glt .gb:nth-child(3n+2){animation-name:gB2}
+#glt .gb:nth-child(3n){animation-name:gB3}
+@keyframes gB1{0%{top:12%;transform:translateX(-20px)}20%{top:61%;transform:translateX(15px)}40%{top:33%;transform:translateX(-10px)}60%{top:84%;transform:translateX(25px)}80%{top:5%;transform:translateX(0)}100%{top:47%;transform:translateX(-25px)}}
+@keyframes gB2{0%{top:70%;transform:translateX(18px)}25%{top:18%;transform:translateX(-22px)}50%{top:52%;transform:translateX(12px)}75%{top:90%;transform:translateX(-14px)}100%{top:28%;transform:translateX(20px)}}
+@keyframes gB3{0%{top:40%;transform:translateX(-12px)}33%{top:8%;transform:translateX(22px)}66%{top:76%;transform:translateX(-18px)}100%{top:55%;transform:translateX(10px)}}
+@media (prefers-reduced-motion:reduce){#glt{display:none}}
+.cvpage,#projpage{position:relative;overflow:hidden;overflow:clip}
+.reali{position:relative}
+.cvpage>.wrap,#projpage>.wrap,.reali>.wrap,.reali>.scene{position:relative;z-index:1}
+@media print{.pxbg{display:none!important}}
+
+/* ---- mise en avant : boutons d'action ---- */
+.cta{display:flex;flex-wrap:wrap;gap:.75rem 1rem;margin-top:1.6rem}
+.cta .cvlink{margin-top:0;padding:.65rem 1.2rem;font-size:1.15rem}
+.cvlink.main{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cvlink.main:hover{background:var(--red);border-color:var(--red);color:#fff}
+header.top nav a.navcta{border:2px solid var(--ink);padding:.2rem .8rem;font-weight:700}
+header.top nav a.navcta:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+header.top nav{align-items:center}
+.cta.rv{transition-delay:.2s}
+.appel{max-width:46ch;font-size:1.25rem;margin:0 0 1.2rem}
+#contact .mail{margin:0 0 1.2rem}
+#contact .mail .cvlink{margin-top:0;font-size:1.2rem;padding:.6rem 1.1rem}
+header.top strong,header.top nav a{white-space:nowrap}
+@media (max-width:520px){header.top nav a.hs{display:none}header.top nav{gap:.75rem}}
+
+/* ---- mentions légales ---- */
+footer .legalink{margin-top:2.6rem;font-size:.85rem}
+footer .legalink a{color:var(--muted);text-decoration:none}
+.legal h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,3.5rem);line-height:1.1;margin:3rem 0 1.5rem}
+.legal h2{font-family:var(--display);font-weight:700;font-size:1.3rem;line-height:1.2;margin:2.2rem 0 .5rem}
+.legal p{max-width:62ch;line-height:1.65;margin:0 0 .8rem}
+.legal a:not(.cvlink){text-decoration:underline}
+.legal .retour{margin-top:3rem}
+
+/* ---- survol des images des projets ---- */
+.proj figure{position:relative;transition:opacity .35s ease}
+.proj figure img{transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease}
+.proj figcaption{transition:color .3s ease}
+@media (hover:hover) and (pointer:fine){
+  .proj figure:hover{z-index:2}
+  .proj figure:hover img{transform:translateY(-6px) scale(1.035);box-shadow:0 22px 40px -16px rgba(0,0,0,.55)}
+  .proj figure:hover figcaption{color:var(--ink)}
+  .proj:has(figure:hover) figure:not(:hover){opacity:.6}
+}
+@media (prefers-reduced-motion:reduce){.proj figure,.proj figure img,.proj figcaption{transition:none}.proj figure:hover img{transform:none!important}}
+
+/* ---- menu ---- */
+#menubar{position:fixed;z-index:220;top:calc(env(safe-area-inset-top,0px) + .8rem);right:max(clamp(1.25rem,4vw,3rem),calc((100vw - 1180px)/2 + clamp(1.25rem,4vw,3rem)));display:flex;align-items:center;color:var(--ink)}
+#menubar .mlinks{position:absolute;z-index:1;right:0;top:50%;translate:0 -50%;display:flex;align-items:center;gap:1.5rem;white-space:nowrap}
+#menubar .mlinks a{display:block;text-decoration:none;color:var(--ink);font-size:.95rem;padding:.25rem 0;border-bottom:2px solid transparent;transform-origin:center;transition:opacity .3s ease calc(.12s + var(--d)),transform .55s cubic-bezier(.2,.9,.3,1.15) calc(.12s + var(--d)),filter .4s ease calc(.12s + var(--d)),visibility 0s,border-color .2s,background .2s,color .2s}
+#menubar .mlinks a:nth-child(1){--d:.16s}#menubar .mlinks a:nth-child(2){--d:.08s}#menubar .mlinks a:nth-child(3){--d:0s}
+#menubar .mlinks a:hover{border-color:var(--red)}
+#menubar .mlinks a.navcta{border:2px solid var(--ink);padding:.2rem .8rem;font-weight:700}
+#menubar .mlinks a.navcta:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+#menubar.col .mlinks a{opacity:0;transform:translateX(var(--dx,2.6rem)) scale(.12);filter:blur(4px);visibility:hidden;pointer-events:none;transition:opacity .22s ease calc(.34s + var(--d)),transform .5s cubic-bezier(.6,0,.9,.45) calc(.12s + var(--d)),filter .5s ease calc(.12s + var(--d)),visibility 0s calc(.75s + var(--d))}
+#menubar .mbtn{display:inline-flex;align-items:center;gap:.65rem;font:inherit;font-size:1rem;font-weight:700;line-height:1.2;color:var(--ink);background:var(--bg);border:2px solid var(--ink);border-radius:0;padding:.3rem .95rem;cursor:pointer;box-shadow:0 8px 22px -12px rgba(0,0,0,.45);position:relative;z-index:2;transform-origin:center;transition:opacity .25s ease,transform .45s cubic-bezier(.3,1.6,.5,1),visibility 0s,background .2s,color .2s}
+#menubar .mbtn:hover{background:var(--ink);color:var(--bg)}
+#menubar:not(.col) .mbtn{opacity:0;transform:scale(.5);visibility:hidden;pointer-events:none;transition:opacity .25s ease .1s,transform .3s ease .1s,visibility 0s .4s}
+.mic{position:relative;width:16px;height:12px;display:inline-block;flex:none}
+.mic::before,.mic::after{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor;transition:transform .35s cubic-bezier(.3,1.4,.5,1),top .35s ease}
+.mic::before{top:2px}.mic::after{top:8px}
+.mbtn[aria-expanded="true"] .mic::before{top:5px;transform:rotate(45deg)}
+.mbtn[aria-expanded="true"] .mic::after{top:5px;transform:rotate(-45deg)}
+@keyframes gulp{0%{transform:scale(1);box-shadow:0 0 0 0 color-mix(in srgb,var(--ink) 45%,transparent)}35%{transform:scale(1.14,.9)}60%{transform:scale(.96,1.06)}100%{transform:scale(1);box-shadow:0 0 0 16px transparent}}
+#menubar.pulse .mbtn{animation:gulp .55s ease-out}
+@media (max-width:520px){#menubar .mlinks{display:none}#menubar:not(.col) .mbtn{opacity:1;transform:none;visibility:visible;pointer-events:auto}}
+html.menu-open{overflow:hidden}
+#menu{position:fixed;inset:0;z-index:200;overflow:auto;display:flex;padding:calc(env(safe-area-inset-top,0px) + 5rem) clamp(1.25rem,4vw,3rem) 3rem;background:color-mix(in srgb,var(--bg) 42%,transparent);-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0);opacity:0;visibility:hidden;transition:opacity .35s ease,backdrop-filter .45s ease,-webkit-backdrop-filter .45s ease,visibility 0s .45s}
+#menu.open{opacity:1;visibility:visible;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);transition:opacity .35s ease,backdrop-filter .45s ease,-webkit-backdrop-filter .45s ease,visibility 0s}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){#menu{background:color-mix(in srgb,var(--bg) 90%,transparent)}}
+#menu .mwrap{width:100%;max-width:1180px;margin:auto}
+#menu .mnav{display:flex;flex-direction:column;align-items:flex-start}
+#menu .mnav a,#menu .msearch{opacity:0;transform:translateY(28px);transition:opacity .45s ease,transform .55s cubic-bezier(.2,.8,.2,1)}
+#menu.open .mnav a,#menu.open .msearch{opacity:1;transform:none}
+#menu.open .mnav a:nth-child(1){transition-delay:.08s}#menu.open .mnav a:nth-child(2){transition-delay:.15s}#menu.open .mnav a:nth-child(3){transition-delay:.22s}#menu.open .msearch{transition-delay:.3s}
+#menu .mnav a{display:block;width:fit-content;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,10vw,5.2rem);line-height:1.12;padding:.04em 0}
+#menu.open .mnav a:hover,#menu.open .mnav a:focus-visible{transform:translateX(.6rem);color:var(--red);transition-delay:0s}
+.msearch{margin-top:clamp(1.6rem,4vh,2.6rem);max-width:640px}
+#menu .sfield{display:flex;align-items:center;gap:.7rem;height:2.9rem;padding:0 1.1rem;border:2px solid var(--ink);border-radius:999px;color:var(--ink);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+#menu .sfield:focus-within{outline:3px solid var(--blue);outline-offset:3px}
+#menu .sfield svg{flex:none;width:19px;height:19px;opacity:.75}
+#sq{all:unset;flex:1;min-width:0;font-family:var(--text);font-size:1.2rem;color:var(--ink)}
+#sq::placeholder{color:var(--muted);opacity:1}
+#sres{margin-top:.6rem;background:var(--bg);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);padding:.35rem}
+#sres[hidden]{display:none}
+#sres a{display:block;padding:.6rem .8rem;border-radius:8px;text-decoration:none;color:var(--ink)}
+#sres a:hover,#sres a[aria-selected="true"]{background:color-mix(in srgb,var(--ink) 11%,transparent)}
+#sres .k{display:block;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+#sres strong{display:block;font-family:var(--display);font-size:1.1rem;line-height:1.25}
+#sres .s{display:block;color:var(--muted);font-size:.98rem;line-height:1.35;margin-top:.1rem}
+#sres mark{background:#F4B71D;color:#12151A;border-radius:2px;padding:0 .1em}
+#sres .none{padding:.8rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){#menubar *,#menu,#menu *{transition:none!important}#menubar.pulse .mbtn{animation:none}}
+@media print{#menubar,#menu{display:none!important}}
+</style>
+</head>
+<body>
+<div id="glt" aria-hidden="true"><div class="gb" style="--c:#D62A1F;height:14px;animation-duration:0.5s;animation-delay:-0.0s"></div><div class="gb" style="--c:#4FD1C1;height:8px;animation-duration:0.43s;animation-delay:-0.09s"></div><div class="gb" style="--c:#2A5BA8;height:22px;animation-duration:0.61s;animation-delay:-0.24s"></div><div class="gb" style="--c:#F4B71D;height:10px;animation-duration:0.37s;animation-delay:-0.22s"></div><div class="gb" style="--c:#B14AED;height:16px;animation-duration:0.55s;animation-delay:-0.44s"></div><div class="gb" style="--c:#FF2E93;height:6px;animation-duration:0.46s;animation-delay:-0.0s"></div><div class="gb" style="--c:#D62A1F;height:26px;animation-duration:0.68s;animation-delay:-0.14s"></div><div class="gb" style="--c:#4FD1C1;height:9px;animation-duration:0.4s;animation-delay:-0.16s"></div><div class="gb" style="--c:#F4B71D;height:12px;animation-duration:0.52s;animation-delay:-0.31s"></div><div class="gb" style="--c:#2A5BA8;height:18px;animation-duration:0.34s;animation-delay:-0.27s"></div><div class="gb" style="--c:#FF2E93;height:7px;animation-duration:0.58s;animation-delay:-0.0s"></div><div class="gb" style="--c:#B14AED;height:20px;animation-duration:0.44s;animation-delay:-0.09s"></div></div>
+<div id="menubar"><nav class="mlinks" aria-label="Navigation principale"><a href="#apropos">À propos</a><a href="#realisation">Réalisations</a><a class="navcta" href="#contact">Me contacter</a></nav><button class="mbtn" id="menubtn" type="button" aria-expanded="false" aria-controls="menu"><span class="mlab">Menu</span><span class="mic" aria-hidden="true"></span></button></div>
+<div id="menu" role="dialog" aria-modal="true" aria-label="Menu" inert><div class="mwrap"><nav class="mnav" aria-label="Menu principal"><a href="#apropos">À propos</a><a href="#realisation">Réalisations</a><a href="#contact">Me contacter</a></nav><div class="msearch" role="search"><label class="sfield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg><span class="sr">Rechercher dans le site</span><input id="sq" type="search" placeholder="Rechercher : projets, formation, logiciels…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="sres"></label><div id="sres" role="listbox" hidden></div></div></div></div>
+<div id="home">
+<div class="about" id="about"><div class="pxwrap pa" aria-hidden="true"><div class="pxbg" aria-hidden="true"><i class="sa" style="--c:#D62A1F;--h:260px;--r:18deg;--t:5.3s;left:4%;top:6%"></i><i class="sb" style="--c:#4FD1C1;--h:180px;--r:-24deg;--t:6.7s;right:6%;top:3%"></i><i class="sc" style="--c:#F4B71D;--h:140px;--r:-35deg;--t:4.6s;left:12%;top:26%"></i><i class="sa" style="--c:#B14AED;--h:300px;--r:12deg;--t:7.9s;right:3%;top:30%"></i><i class="sb" style="--c:#FF2E93;--h:220px;--r:28deg;--t:5.9s;left:2%;top:48%"></i><i class="sc" style="--c:#2A5BA8;--h:160px;--r:-18deg;--t:6.2s;right:9%;top:52%"></i><i class="sa" style="--c:#4FD1C1;--h:280px;--r:-10deg;--t:7.3s;left:7%;top:70%"></i><i class="sb" style="--c:#D62A1F;--h:200px;--r:30deg;--t:4.9s;right:4%;top:74%"></i><i class="sc" style="--c:#F4B71D;--h:150px;--r:22deg;--t:6.6s;left:15%;top:88%"></i><i class="sa" style="--c:#B14AED;--h:240px;--r:-28deg;--t:5.4s;right:12%;top:90%"></i><i class="sb" style="--c:#B14AED;--h:200px;--r:-14deg;--t:6.1s;left:1%;top:14%"></i><i class="sc" style="--c:#FF2E93;--h:130px;--r:26deg;--t:5.1s;right:14%;top:14%"></i><i class="sa" style="--c:#2A5BA8;--h:240px;--r:20deg;--t:7.1s;left:9%;top:38%"></i><i class="sb" style="--c:#F4B71D;--h:190px;--r:-32deg;--t:5.7s;right:1%;top:42%"></i><i class="sc" style="--c:#D62A1F;--h:150px;--r:-22deg;--t:6.4s;left:3%;top:60%"></i><i class="sa" style="--c:#4FD1C1;--h:260px;--r:16deg;--t:7.7s;right:2%;top:62%"></i><i class="sb" style="--c:#2A5BA8;--h:210px;--r:24deg;--t:5.2s;left:2%;top:80%"></i><i class="sc" style="--c:#FF2E93;--h:170px;--r:-14deg;--t:6.9s;right:8%;top:84%"></i></div></div>
+<div class="wrap">
+  <header class="top">
+    <strong>F. Baldacci</strong>
+  </header>
+
+  <section class="hero" id="apropos" aria-labelledby="nom">
+    <div>
+      <h1 id="nom" class="glitch" data-text="Flavien Baldacci">Flavien Baldacci</h1>
+      <p>Étudiant en deuxième année de design scénographie | École de design Nantes Atlantique.</p>
+      <div class="cta"><a class="cvlink main" href="#realisation">Voir mes réalisations</a><a class="cvlink" href="#contact">Me contacter</a></div>
+    </div>
+    <img class="photo" src="images/portrait.webp" alt="Portrait de Flavien Baldacci" decoding="async">
+  </section>
+  <section class="cv" aria-label="Parcours">
+    <div class="row">
+      <h2>À propos</h2>
+      <div>
+        <p>Moi, c’est Flavien, j’ai 19 ans et, depuis tout petit, je suis fasciné par ce qui se cache derrière un événement. Les coulisses, les décors de cinéma ou encore les jeux de lumière d’une salle de concert ont toujours éveillé ma curiosité.</p>
+        <p>J’ai d’abord exploré cet univers à travers les jeux vidéo, avant de pouvoir expérimenter et développer ma créativité grâce aux ateliers et aux options cinéma et arts plastiques suivis au collège et au lycée.</p>
+        <p>Depuis un an, je me plonge pleinement dans l’univers de la scénographie à l’École de design Nantes Atlantique. Curieux, motivé et à l’écoute, je souhaite aujourd’hui découvrir ce métier de manière concrète et professionnelle. Je suis donc à la recherche d’un stage de quatre semaines pour apprendre auprès de professionnels, nourrir ma créativité, et donner vie à de nouveaux projets.</p>
+      </div>
+    </div>
+    <div class="row">
+      <h2>Anecdote sur moi</h2>
+      <div>
+        <p>C’est à la suite de mon stage de troisième, effectué au sein de l’imprimerie Quo Vadis, qu’on m’a offert pour Noël une tablette graphique que j’avais demandée. J’ai alors commencé à dessiner sur Photoshop, comme j’avais pu l’expérimenter durant mon stage au sein du pôle graphisme de l’entreprise.</p>
+        
+      </div>
+    </div>
+    <div class="row school">
+      <h2><img class="logo" src="images/logo-ecole.webp" alt="Logo de l’École de design Nantes Atlantique" decoding="async">Formation</h2>
+      <div>
+        <p class="ttl">Scénographie, deuxième année</p>
+        <p>École de design Nantes Atlantique</p>
+        <p>Diplôme de design Bac +5</p>
+        <p>Septembre 2025 – en cours</p>
+      </div>
+    </div>
+    <div class="row skills">
+      <div class="sk"><h2>Compétences</h2><ul><li>Capacité d’adaptation</li><li>Sens de l’organisation</li><li>Créativité</li><li>Curiosité</li><li>Minutie</li><li>Travail d’équipe</li></ul></div>
+      <div class="sk"><h2>Logiciels</h2><ul class="tools"><li class="adobe">Suite Adobe<span class="ics"><img src="images/icone-adobe-creative-cloud.png" alt="Adobe Creative Cloud" decoding="async"><img src="images/icone-photoshop.png" alt="Photoshop" decoding="async"><img src="images/icone-illustrator.png" alt="Illustrator" decoding="async"><img src="images/icone-lightroom.png" alt="Lightroom" decoding="async"><img src="images/icone-indesign.png" alt="InDesign" decoding="async"><img src="images/icone-premiere-pro.png" alt="Premiere Pro" decoding="async"><img src="images/icone-after-effects.png" alt="After Effects" decoding="async"></span></li><li><img src="images/icone-sketchup.png" alt="SketchUp" decoding="async"><span>SketchUp</span></li><li><img src="images/icone-autocad.png" alt="AutoCAD" decoding="async"><span>AutoCAD</span></li><li><img src="images/icone-blender.png" alt="Blender" decoding="async"><span>Blender</span></li><li><img src="images/icone-filmora.png" alt="Filmora" decoding="async"><span>Filmora</span></li><li><img src="images/icone-vegas-pro.png" alt="Vegas Pro" decoding="async"><span>Vegas Pro</span></li><li><img src="images/icone-audacity.png" alt="Audacity" decoding="async"><span>Audacity</span></li><li><img src="images/icone-krita.png" alt="Krita" decoding="async"><span>Krita</span></li><li><img src="images/icone-gimp.png" alt="GIMP" decoding="async"><span>GIMP</span></li></ul></div>
+    </div>
+    <div class="row">
+      <h2>Expériences</h2>
+      <div><p>Job étudiant, intérimaire, ID Logistics et Action (depuis juin 2026)</p><p>Stage d’observation chez Atol opticien (juin 2023)</p><p>Stage d’observation en imprimerie, Quo Vadis (octobre 2021)</p><p><a class="cvlink" href="#cv">Voir mon CV complet</a></p></div>
+    </div>
+  </section>
+</div>
+</div>
+
+<section class="reali" id="realisation" aria-labelledby="rh">
+  <div class="pxwrap pr" aria-hidden="true"><div class="pxbg" aria-hidden="true"><i class="sa" style="--c:#FF2E93;--h:136px;--r:-95deg;--t:4.6s;left:10%;top:38%"></i><i class="sc" style="--c:#B14AED;--h:170px;--r:88deg;--t:5.3s;right:14%;top:57%"></i><i class="sc" style="--c:#D62A1F;--h:141px;--r:99deg;--t:5.4s;left:5%;top:2%"></i><i class="sb" style="--c:#4FD1C1;--h:147px;--r:-65deg;--t:4.9s;right:12%;top:49%"></i><i class="sa" style="--c:#D62A1F;--h:120px;--r:-67deg;--t:5.2s;left:5%;top:8%"></i><i class="sb" style="--c:#FF2E93;--h:221px;--r:67deg;--t:4.8s;right:15%;top:45%"></i><i class="sb" style="--c:#D62A1F;--h:142px;--r:-32deg;--t:5.7s;left:10%;top:74%"></i><i class="sc" style="--c:#B14AED;--h:183px;--r:-53deg;--t:4.9s;right:15%;top:72%"></i><i class="sb" style="--c:#4FD1C1;--h:168px;--r:-45deg;--t:6.3s;left:1%;top:75%"></i><i class="sa" style="--c:#F4B71D;--h:218px;--r:-11deg;--t:5.9s;right:16%;top:73%"></i><i class="sa" style="--c:#2A5BA8;--h:197px;--r:51deg;--t:5.2s;left:16%;top:2%"></i><i class="sa" style="--c:#F4B71D;--h:145px;--r:19deg;--t:8.0s;right:6%;top:81%"></i></div></div><div class="wrap"><div class="head"><h2 id="rh">Réalisations</h2></div></div>
+  <div class="scene" id="rscene" role="group" aria-roledescription="carrousel" aria-label="Projets, appuie sur Entrée pour ouvrir le projet affiché" tabindex="0">
+    <div class="ring" id="rring">
+      <article class="card" data-proj="interstice" style="--c:#8FC4DD;--on:#0D1015;--a:0deg"><div class="front"><img src="images/interstice-carte.webp" alt="Maquette Interstice vue de face : cascade de cartons pliés en facettes le long d’un mur, escaliers blancs bordés de cordes et auvent en tissu, entre deux façades blanches" draggable="false" style="object-position:50% 55%" decoding="async"><div class="txt"><h3>Interstice</h3><p>Dans ce projet, très créatif, mon groupe et moi avons dû transformer un interstice urbain. Le but était d’accueillir une scénographie qui rafraîchissait les piétons pendant les périodes de canicule. Nos contraintes étaient les mots : fluide, stratifié, radical, voluptueux et élancé. Nous avons donc conçu un parcours en hauteur semblable à une via ferrata, dont les escaliers longeaient une cascade artificielle d’eau. Le bruit et les gouttes d’eau glissant le long de cette cascade rafraîchissaient les passants, proposant ainsi une expérience à la fois visuelle, sonore et sensorielle.</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="hellfest" style="--c:#FF2E93;--on:#0D1015;--a:36deg"><div class="front"><img src="images/hellfest-carte.webp" alt="Perspective de la zone 2 : vitrines en cascade présentant guitares, batterie et micro, sous un plafond noir" draggable="false" style="object-position:50% 50%" decoding="async"><div class="txt"><h3>Exposition Hellfest</h3><p>Dans ce projet workshop de scénographie, notre groupe a dû adapter une exposition sur le Hellfest pour des parents et leurs jeunes bébés. Nous avons donc mis en place un système de commodités : une salle, située au milieu de l’exposition, permet aux parents de s’y rendre à tout moment. L’espace est travaillé pour accueillir plusieurs poussettes, et un système sonore ne dérangeant pas les enfants a été mis en place.</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="boutique" style="--c:#D62A1F;--on:#ffffff;--a:72deg"><div class="front"><img src="images/boutique-carte.webp" alt="Maquette d’une boutique de chaussures circulaire, toit en tissu rouge et franges rouges suspendues" draggable="false" decoding="async"><div class="txt"><h3>Camper</h3><p>Nous avons dû aménager une boutique pour la marque Camper, en nous inspirant du travail de Marko Brajovic sur ses boutiques de Milan, Melbourne et São Paulo. L’espace devait s’intégrer dans un plan de forme circulaire, avec une surface limitée, tout en prenant place dans une zone de circulation. La boutique a donc été pensée comme un espace que l’on traverse.</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="feutre" style="--c:#4FD1C1;--on:#0D1015;--a:108deg"><div class="front"><img src="images/feutre-carte.webp" alt="Disques de feutre turquoise à cercles concentriques, montés sur carton avec des sangles noires" draggable="false" decoding="async"><div class="txt"><h3>Target IT</h3><p>En octobre 2026, dans le cadre d’un projet de groupe, nous avons dû inventer un jeu en respectant deux contraintes : les mots « compétition » et « turbulent ».</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="axonometrie" style="--c:#2A5BA8;--on:#ffffff;--a:144deg"><div class="front"><img src="images/axonometrie-carte.webp" alt="Axonométrie éclatée d’une pièce avec bibliothèque, bureau et fauteuil, murs bleus écartés" draggable="false" decoding="async"><div class="txt"><h3>SketchUp</h3><p>Bureau 3D</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="salon" style="--c:#C4B59F;--on:#0D1015;--a:180deg"><div class="front"><img src="images/salon-carte.webp" alt="Plan d’un salon de coiffure et d’esthétique à Caen : espace coiffure, accueil, bacs à shampoings, deux cabines d’esthétique et une réserve, sur parquet en chevrons" draggable="false" decoding="async"><div class="txt"><h3>Salon de coiffure et d’esthétique</h3><p>Dans le cadre d’un projet scolaire, j’ai décidé de transformer un salon de coiffure et d’esthétique classique afin d’attirer les touristes, notamment ceux qui aiment plonger au cœur de l’histoire.</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="blender" style="--c:#6B3FD4;--on:#ffffff;--a:216deg"><div class="front"><img src="images/blender-carte.webp" alt="Scène 3D low poly : une fusée décolle d’une île rocheuse, entourée de satellites, de nuages, d’une planète à anneau et d’un soleil orange, sur fond dégradé violet et rose" draggable="false" style="object-position:50% 40%" decoding="async"><div class="txt"><h3>Blender 3D</h3><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="jeu" style="--c:#3A3A3C;--on:#ffffff;--a:252deg"><div class="front"><img src="images/jeu-carte.webp" alt="Jeu de rôle sur le thème de la culture numérique : livret de règles dépliable, fiches de boss et d’artefact, fiche de personnage, carte du monde dessinée à la main (Deep Web, Dark Web, La Twittone, La Guilde, Memesia) et figurines en papier" draggable="false" decoding="async"><div class="txt"><h3>Jeu de rôle</h3><p>Réalisation d’un jeu de rôle type D&amp;D, sur le thème de la culture numérique.</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="assemblage" style="--c:#E0A458;--on:#0D1015;--a:288deg"><div class="front"><img src="images/assemblage-carte.webp" alt="Assemblage en bois : deux pièces de bois taillées, l’une terminée par un tenon en forme de pointe de flèche, l’autre creusée de l’emplacement correspondant" draggable="false" decoding="async"><div class="txt"><h3>Assemblage en bois</h3><p>Arrow connection</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+      <article class="card" data-proj="mural" style="--c:#F4B71D;--on:#0D1015;--a:324deg"><div class="front"><img src="images/mural-carte.webp" alt="Élèves en train de peindre les dernières formes et les points de la fresque colorée, sur des échelles, devant des piles de manuels" draggable="false" decoding="async"><div class="txt"><h3>Décoration murale d’une salle de permanence au lycée Saint-Stanislas</h3><p>Nous avons dû imaginer et peindre une décoration murale, dans le but de rendre vivante et agréable la salle de permanence de mon lycée.</p><span class="more">Voir le projet →</span></div></div><div class="back" aria-hidden="true"></div></article>
+    </div>
+  </div>
+  <div class="ctrl" id="rctrl" hidden><button type="button" id="rprev">Précédent</button><span id="rcount" aria-hidden="true">1 / 10</span><button type="button" id="rnext">Suivant</button></div>
+  <p class="hint" id="rhint" hidden>Fais tourner les projets avec la molette quand le curseur est sur une carte, ou en les faisant glisser. Clique sur une carte pour ouvrir le projet.</p>
+  <p class="sr" id="rlive" aria-live="polite"></p>
+</section>
+
+<div class="wrap">
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p class="appel">Je suis à la recherche d’un stage : n’hésitez pas à m’écrire.</p>
+    <p class="mail"><a class="cvlink main" href="mailto:f.baldacci@lecolededesign.com">f.baldacci@lecolededesign.com</a></p>
+    <p><a href="https://www.instagram.com/flavien_edna/" target="_blank" rel="noopener noreferrer">@flavien_edna</a></p>
+    <p><a href="https://www.linkedin.com/in/flavien-baldacci-a30bb836a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    <p class="legalink"><a href="#mentions-legales">Mentions légales</a></p>
+  </footer>
+</div>
+
+</div>
+<div id="legalpage" class="legal" hidden>
+<div class="wrap">
+  <header class="top">
+    <strong>F. Baldacci</strong>
+  </header>
+  <main>
+    <h1>Mentions légales</h1>
+    <h2>Éditeur et directeur de la publication</h2>
+    <p>Flavien Baldacci, étudiant en design scénographie.<br>Contact : <a href="mailto:f.baldacci@lecolededesign.com">f.baldacci@lecolededesign.com</a></p>
+    <h2>Hébergeur</h2>
+    <p>GitHub, Inc. (service GitHub Pages)<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+    <h2>Données personnelles</h2>
+    <p>Ce site ne dépose aucun cookie et ne comporte ni formulaire ni outil de statistiques. Les polices d’écriture (Google Fonts) et une bibliothèque technique (cdnjs, Cloudflare) sont chargées depuis des serveurs tiers, qui peuvent recevoir l’adresse IP des visiteurs. Pour toute question, vous pouvez écrire à l’adresse indiquée ci-dessus.</p>
+    <h2>Propriété intellectuelle</h2>
+    <p>Sauf mention contraire, les textes, images et réalisations présentés sur ce site sont l’œuvre de Flavien Baldacci. Toute reproduction sans autorisation est interdite.</p>
+    <p class="retour"><a class="cvlink" href="#apropos">Retour au portfolio</a></p>
+  </main>
+</div>
+</div>
+<div id="cvpage" class="cvpage" hidden>
+<div class="pxbg" aria-hidden="true"><i class="sb" style="--c:#4FD1C1;--h:327px;--r:13deg;--t:4.6s;left:9%;top:11%"></i><i class="sa" style="--c:#2A5BA8;--h:252px;--r:7deg;--t:6.6s;right:6%;top:42%"></i><i class="sc" style="--c:#FF2E93;--h:292px;--r:13deg;--t:7.2s;left:7%;top:59%"></i><i class="sc" style="--c:#4FD1C1;--h:280px;--r:4deg;--t:4.8s;right:4%;top:55%"></i><i class="sc" style="--c:#F4B71D;--h:314px;--r:2deg;--t:6.7s;left:5%;top:68%"></i><i class="sa" style="--c:#4FD1C1;--h:333px;--r:-4deg;--t:6.5s;right:2%;top:18%"></i><i class="sc" style="--c:#B14AED;--h:271px;--r:1deg;--t:5.7s;left:1%;top:41%"></i><i class="sc" style="--c:#F4B71D;--h:316px;--r:-5deg;--t:5.3s;right:4%;top:28%"></i><i class="sa" style="--c:#B14AED;--h:326px;--r:-10deg;--t:5.6s;left:1%;top:59%"></i><i class="sa" style="--c:#FF2E93;--h:298px;--r:-11deg;--t:6.1s;right:1%;top:71%"></i><i class="sa" style="--c:#2A5BA8;--h:241px;--r:-2deg;--t:6.9s;left:0%;top:60%"></i><i class="sb" style="--c:#D62A1F;--h:337px;--r:12deg;--t:7.1s;right:10%;top:77%"></i><i class="sa" style="--c:#D62A1F;--h:249px;--r:-3deg;--t:4.8s;left:3%;top:93%"></i><i class="sa" style="--c:#B14AED;--h:275px;--r:12deg;--t:4.8s;right:5%;top:19%"></i></div><div class="wrap">
+  <header class="top">
+    <strong>F. Baldacci</strong>
+  </header>
+  <div class="cvbar"><a class="cvlink" id="dlpdf" href="CV-Flavien-Baldacci.pdf" download="CV-Flavien-Baldacci.pdf">Télécharger en PDF</a></div>
+  <img class="cvimg" src="images/cv.webp" alt="CV de Flavien Baldacci" decoding="async">
+  <footer><p><a class="cvlink" href="#apropos">Retour au portfolio</a></p></footer>
+</div>
+</div>
+<div id="projpage" hidden>
+<div class="pxbg" aria-hidden="true"><i class="sc" style="--c:#FF2E93;--h:182px;--r:38deg;--t:6.0s;left:11%;top:53%"></i><i class="sc" style="--c:#FF2E93;--h:104px;--r:18deg;--t:6.7s;right:15%;top:36%"></i><i class="sb" style="--c:#D62A1F;--h:165px;--r:-44deg;--t:4.7s;left:13%;top:7%"></i><i class="sa" style="--c:#2A5BA8;--h:120px;--r:-13deg;--t:7.0s;right:15%;top:3%"></i><i class="sa" style="--c:#F4B71D;--h:189px;--r:19deg;--t:6.3s;left:23%;top:22%"></i><i class="sa" style="--c:#F4B71D;--h:191px;--r:-19deg;--t:6.2s;right:24%;top:60%"></i><i class="sa" style="--c:#4FD1C1;--h:157px;--r:-40deg;--t:6.4s;left:6%;top:60%"></i><i class="sa" style="--c:#D62A1F;--h:183px;--r:-37deg;--t:5.7s;right:0%;top:63%"></i><i class="sc" style="--c:#B14AED;--h:120px;--r:-39deg;--t:6.3s;left:1%;top:96%"></i><i class="sa" style="--c:#D62A1F;--h:173px;--r:-2deg;--t:6.4s;right:6%;top:51%"></i><i class="sc" style="--c:#F4B71D;--h:154px;--r:17deg;--t:6.3s;left:8%;top:21%"></i><i class="sa" style="--c:#2A5BA8;--h:172px;--r:-20deg;--t:5.3s;right:24%;top:2%"></i><i class="sb" style="--c:#4FD1C1;--h:111px;--r:-38deg;--t:4.7s;left:4%;top:43%"></i><i class="sb" style="--c:#FF2E93;--h:189px;--r:35deg;--t:5.7s;right:21%;top:68%"></i><i class="sc" style="--c:#B14AED;--h:208px;--r:-41deg;--t:6.9s;left:14%;top:89%"></i><i class="sb" style="--c:#4FD1C1;--h:100px;--r:-18deg;--t:6.5s;right:5%;top:93%"></i></div><div class="wrap">
+  <header class="top">
+    <strong>F. Baldacci</strong>
+  </header>
+  <article class="proj lay" id="p-salon" data-card="salon" hidden>
+    <h1></h1>
+    <p class="desc">Dans le cadre d’un projet scolaire, j’ai décidé de transformer un salon de coiffure et d’esthétique classique afin d’attirer les touristes, notamment ceux qui aiment plonger au cœur de l’histoire.</p>
+    <figure><img src="images/salon-01.webp" alt="Planche d’inspiration pour la façade : devanture de boutique de magie dessinée, intérieur voûté en pierre, maisons à pans de bois et auberge, style taverne" loading="lazy" decoding="async" width="1500" height="850"><figcaption>Moodboard façade</figcaption></figure>
+    <figure><img src="images/salon-02.webp" alt="Planche d’inspiration pour l’intérieur : barbier new-yorkais, boiseries anciennes, salle voûtée en brique avec table en bois, bar en bois orangé, salle aux poutres apparentes" loading="lazy" decoding="async" width="1500" height="839"><figcaption>Moodboard intérieur</figcaption></figure>
+    <figure><img src="images/salon-03.webp" alt="Planche d’inspiration pour le mobilier : lustre à bougies en fer forgé, miroir doré ancien, grande table, taverne en 3D, chariot de coiffure en bois brut" loading="lazy" decoding="async" width="1500" height="844"><figcaption>Moodboard mobilier</figcaption></figure>
+    <figure class="mat"><img src="images/salon-04.webp" alt="Planche de matériaux : parquet en chevrons, brique grise et rouge, bois vieilli, pierre ardoise, parquet à motif losange, avec une palette brun, gris, blanc et orange" loading="lazy" decoding="async" width="1500" height="843"><figcaption>Matériaux</figcaption></figure>
+    <figure class="plan"><img src="images/salon-05.webp" alt="Plan du salon avec les zones colorées : espace coiffure, accueil, cabines d’esthétique, bacs à shampoings, réserve et salle de pause" loading="lazy" decoding="async" width="1166" height="807"><figcaption>Zoning du projet</figcaption></figure>
+    <figure class="plan"><img data-main alt="" ><figcaption>Plan texturé</figcaption></figure>
+  </article>
+  <article class="proj lay" id="p-boutique" data-card="boutique" hidden><h1></h1><p class="desc">Nous avons dû aménager une boutique pour la marque Camper, en nous inspirant du travail de Marko Brajovic sur ses boutiques de Milan, Melbourne et São Paulo. L’espace devait s’intégrer dans un plan de forme circulaire, avec une surface limitée, tout en prenant place dans une zone de circulation. La boutique a donc été pensée comme un espace que l’on traverse.<br><br>Nous avons repris le principe du biomimétisme, notamment à travers des milliers de lacets rouges suspendus au plafond et fixés aux murs, un élément caractéristique du travail de Marko Brajovic.</p><figure><img data-main alt=""></figure><figure><img src="images/boutique-01.webp" alt="Maquette Camper vue de dessus : toit en tissu rouge, intérieur blanc avec présentoirs et silhouettes" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/boutique-02.webp" alt="Maquette Camper vue de face : façade rouge avec le nom CAMPER en feutre blanc et franges rouges sous le toit" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/boutique-03.webp" alt="Gros plan sur une étagère de chaussures et le plafond de franges rouges, avec des silhouettes blanches" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/boutique-04.webp" alt="Vue intérieure de la maquette : étagères de chaussures, caisse rouge, présentoirs et franges rouges suspendues" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/boutique-05.webp" alt="Vue floue de l’étagère de chaussures derrière les franges rouges et les présentoirs blancs" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/boutique-06.webp" alt="Caisse rouge portant le mot CAMPER, présentoirs blancs et étagère de chaussures sous les franges rouges" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/boutique-07.webp" alt="Plan de la boutique Camper à l’échelle 1/50e : local circulaire de 78,5 m², zone de circulation hachurée, présentoirs et caisse" loading="lazy" decoding="async" width="1500" height="1099"></figure><figure><img src="images/boutique-08.webp" alt="Coupe de la boutique à l’échelle 1/50e : plafond de franges suspendues, étagères, présentoirs et silhouette pour l’échelle" loading="lazy" decoding="async" width="1500" height="1108"></figure></article>
+  <article class="proj lay" id="p-feutre" data-card="feutre" hidden><h1></h1><p class="desc"></p><figure><img data-main alt=""></figure><figure><img src="images/feutre-01.webp" alt="Gros plan sur les cibles du bras et du torse, chacune avec une balle recouverte de velcro" loading="lazy" decoding="async" width="1500" height="1000"></figure><figure><img src="images/feutre-02.webp" alt="Portrait de profil : dispositif porté avec une cible au front, une sur le bras et une grande sur le torse" loading="lazy" decoding="async" width="1000" height="1500"></figure><figure><img src="images/feutre-03.webp" alt="Vue de dos : grande cible circulaire en feutre turquoise fixée par deux bretelles, bandeau et cibles sur les bras" loading="lazy" decoding="async" width="1000" height="1500"></figure><figure><img src="images/feutre-04.webp" alt="Portrait de face : cible frontale avec balle rose, grande cible sur le torse avec balle bleue et sangles noires" loading="lazy" decoding="async" width="1000" height="1500"></figure><figure><img src="images/feutre-05.webp" alt="Sac en tissu beige à cordon pour ranger le dispositif" loading="lazy" decoding="async" width="1500" height="1000"></figure><div class="feat"><figure><img src="images/feutre-06.webp" alt="Règles du jeu Target-it écrites à la main : contenu du set et déroulé de la partie en cinq étapes" loading="lazy" decoding="async" width="631" height="870"></figure><div class="ftxt"><h2 style="font-size:1.35rem;margin:0 0 .6rem">Règle du jeu « Target IT »</h2><p style="margin:0 0 .9rem">Le but est de marquer des points dans un temps imparti en visant les cibles de ses adversaires. La balle en scratch se colle aux différentes cibles, ce qui permet de marquer des points.</p><p style="margin:0 0 .3rem"><strong>Contenu du set pour 10 personnes :</strong></p><ul style="margin:0;padding-left:1.2rem"><li>Balle ×10</li><li>Cible tête ×10</li><li>Cible plastron ×10</li><li>Cible bras ×20</li><li>Sac de transport ×1</li></ul></div></div><figure class="plan"><img src="images/feutre-07.webp" alt="Planche Target-it, concept final : usager, contexte, matériaux (velcro fluorescent, lycra, plastique, anse) et dessins du plastron, de la balle et du sac" loading="lazy" decoding="async" width="962" height="645"></figure><figure class="plan"><img src="images/feutre-08.webp" alt="Planche Target-it, scénario d’usage : diviser le groupe en deux équipes, lancer un maximum de balles, compter les points, une équipe gagnante" loading="lazy" decoding="async" width="1315" height="805"></figure></article>
+  <article class="proj" id="p-axonometrie" data-card="axonometrie" hidden><h1></h1><p class="desc"></p><div class="v3d" id="v3d"><div class="stage" id="v3dStage"><div class="msg" id="v3dMsg">Chargement du modèle 3D…</div></div><div class="bar" role="group" aria-label="Vues du modèle 3D"><button type="button" data-view="skp_camera_axonométrie_éclatée" aria-pressed="true">Axonométrie éclatée</button><button type="button" data-view="skp_camera_tout" aria-pressed="false">Vue d’ensemble</button><button type="button" data-view="top" aria-pressed="false">Vue de dessus</button></div><p class="hint">Glisser pour tourner · molette ou pincement pour zoomer · clic droit ou deux doigts pour déplacer</p></div><div class="gal3"><figure><img src="images/axonometrie-01.webp" alt="Perspective intérieure du modèle SketchUp : bibliothèque en bois avec portes vert foncé, maquette de voilier, livres jaunes, bureau avec fauteuil et fauteuil médaillon au premier plan" loading="lazy" decoding="async" width="900" height="546"><figcaption>Perspective intérieure</figcaption></figure></div><div class="gal2"><figure><img src="images/axonometrie-02.webp" alt="Axonométrie éclatée de la pièce : murs bleus écartés, bibliothèque, bureau, fauteuils et tapis" loading="lazy" decoding="async" width="1234" height="780"><figcaption>Axonométrie éclatée</figcaption></figure><figure><img src="images/axonometrie-03.webp" alt="Coupe au trait de la pièce : bibliothèque, bureau, fauteuils et maquette de voilier vus de côté entre les deux murs" loading="lazy" decoding="async" width="831" height="442"><figcaption>Coupe du bureau</figcaption></figure></div><div class="galref"><div class="galrow"><figure><img src="images/axonometrie-04.webp" alt="Vue en perspective du modèle SketchUp en blanc : bibliothèque, plan de travail, fauteuil de bureau et tapis" loading="lazy" decoding="async" width="833" height="892"></figure><figure><img src="images/axonometrie-05.webp" alt="Bureau réel servant de référence : bibliothèque en bois et panneaux vert kaki avec plan de travail, fauteuil de bureau en bois, fauteuil médaillon blanc, tapis et rideau à motifs de feuilles" loading="lazy" decoding="async" width="604" height="900"><figcaption>Image de référence</figcaption></figure></div><figure><img src="images/axonometrie-06.webp" alt="Capture d’écran du modèle dans SketchUp Pro : bibliothèque et plan de travail avec les scènes perspective intérieur, axonométrie éclatée et coupe AA" loading="lazy" decoding="async" width="1600" height="835"></figure></div></article>
+  <article class="proj" id="p-blender" data-card="blender" hidden><h1></h1><p class="desc"></p><figure><img data-main alt=""><figcaption>Rendu</figcaption></figure><figure><img src="images/blender-01.webp" alt="Capture d’écran de Blender : le rendu de la scène de la fusée à gauche, la vue 3D de la scène avec ses lumières à droite et l’éditeur de nœuds en bas" loading="lazy" decoding="async" width="1500" height="802"><figcaption>Dans Blender</figcaption></figure><figure><img src="images/blender-02.webp" alt="Capture d’écran de Blender : la scène 3D low poly en vue solide, avec la fusée posée sur des rochers et des cristaux, et le panneau des réglages de sortie à droite" loading="lazy" decoding="async" width="1600" height="845"></figure><figure><img src="images/blender-03.webp" alt="Capture d’écran de Blender : gros plan sur la fusée en cours de modélisation, avec ses réservoirs sélectionnés en orange" loading="lazy" decoding="async" width="1600" height="823"></figure></article>
+  <article class="proj lay" id="p-jeu" data-card="jeu" hidden><h1></h1><p class="desc"></p><figure><img data-main alt=""><figcaption>Vue d’ensemble</figcaption></figure><figure><img src="images/jeu-01.webp" alt="Fiches Boss et Artefact du jeu de rôle, avec leurs figurines en papier : Shit Storm, Nomophobie, Block Chain, Free to Play et Sobriété Numérique" loading="lazy" decoding="async" width="1400" height="933"><figcaption>Fiches Boss et Artefact</figcaption></figure><figure><img src="images/jeu-02.webp" alt="Carte du monde dessinée à la main avec Deep Web, Dark Web, La Twittone, La Guilde et Memesia, et une figurine de luth sur son socle doré" loading="lazy" decoding="async" width="1400" height="933"><figcaption>Carte du monde</figcaption></figure><figure><img src="images/jeu-03.webp" alt="Livret dépliable en trois volets (Lore, quêtes, règles) posé derrière la fiche du personnage Troll Le Barde" loading="lazy" decoding="async" width="600" height="900"><figcaption>Livret et fiche de personnage</figcaption></figure><figure class="w4"><img src="images/jeu-04.webp" alt="Gros plan sur une figurine de luth en papier sur un socle doré, posée sur la carte du monde" loading="lazy" decoding="async" width="1400" height="933"><figcaption>Détail d’une figurine</figcaption></figure></article>
+  <article class="proj lay" id="p-assemblage" data-card="assemblage" hidden><h1></h1><p class="desc"></p><figure><img data-main alt=""><figcaption>Assemblage ouvert</figcaption></figure><figure><img src="images/assemblage-01.webp" alt="Les deux pièces en bois assemblées en un seul bloc, avec l’empreinte en forme de flèche visible sur le dessus" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Assemblage fermé</figcaption></figure><figure><img src="images/assemblage-02.webp" alt="Croquis de la fiche « Arrow Connection » : deux blocs en perspective avec la flèche qui les verrouille, accompagnés de notes manuscrites" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Croquis</figcaption></figure><figure class="full"><img src="images/assemblage-03.webp" alt="Les deux pièces en bois séparées, debout au-dessus de la fiche de croquis Arrow Connection" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Pièces séparées</figcaption></figure><figure class="full"><img src="images/assemblage-04.webp" alt="Bloc de bois assemblé, debout près de la fiche de croquis Arrow Connection, vue sous un autre angle" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Assemblage fermé et croquis</figcaption></figure></article>
+  <article class="proj lay" id="p-mural" data-card="mural" hidden><h1></h1><p class="desc"></p><div class="feat"><figure><img src="images/mural-01.webp" alt="Planche de recherche de la fresque : esquisses colorées en rouge, orange, jaune et rose, titre « Fresque Perm Lycée », nuancier de feutres et liste de consignes cochées" loading="lazy" decoding="async" width="1400" height="1089"><figcaption>Planche de recherche</figcaption></figure><div class="ftxt"><p><strong>Ma proposition de projet :</strong><br>Illustration et dessin, tout en respectant un cahier des charges.</p><ul><li>Repeindre le mur en blanc cassé</li><li>Utilisation de formes géométriques</li><li>Utilisation de plusieurs couleurs</li><li>Utilisation de formes différentes</li><li>Utilisation de tailles différentes</li><li>Utilisation d’orientations différentes</li></ul><p>Ma proposition n’a malheureusement pas été retenue pour le projet final. Cela ne m’a pas empêché de prendre plaisir à décorer cette pièce autrefois froide.</p></div></div><figure><img src="images/mural-02.webp" alt="Élèves devant le mur blanc de la salle de permanence, avec règles et équerres, en train de tracer les formes de la fresque" loading="lazy" decoding="async" width="1000" height="563"><figcaption>Traçage sur le mur</figcaption></figure><figure><img src="images/mural-03.webp" alt="Élèves sur des échelles et autour d’une table de peinture, premières formes jaunes et roses peintes sur le mur dessiné" loading="lazy" decoding="async" width="1000" height="527"><figcaption>Début de la peinture</figcaption></figure><figure><img data-main alt=""><figcaption>La peinture avance</figcaption></figure><figure><img src="images/mural-04.webp" alt="La fresque terminée vue de biais : soleil jaune, grande forme rose, porte jaune, formes géométriques et lignes de points colorés" loading="lazy" decoding="async" width="1000" height="563"><figcaption>Fresque terminée</figcaption></figure><figure><img src="images/mural-05.webp" alt="La salle de permanence avec la fresque murale terminée : formes géométriques colorées, soleil jaune, grande forme rose, porte jaune, tables et chaises au premier plan" loading="lazy" decoding="async" width="1000" height="563"><figcaption>La salle de permanence</figcaption></figure></article>
+  <article class="proj lay" id="p-interstice" data-card="interstice" hidden><h1></h1><p class="desc"></p><figure class="full"><img src="images/interstice-01.webp" alt="Coupe dessinée à la main de l’interstice, avec les cotes (7,5 m de haut, 3 m de large), la cascade, le système de filtre et de pompe, le bac réservoir, le filet et la toile ombragée ; à droite, dessin au crayon de la paroi en facettes vue d’en bas" loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Coupe de principe de l’interstice et perspective</figcaption></figure><figure><img data-main alt=""><figcaption>Maquette vue de face</figcaption></figure><figure><img src="images/interstice-02.webp" alt="Maquette Interstice en vue en perspective : paroi de cartons en facettes, escaliers blancs et cordes entre deux façades blanches, toile en gaze au sommet" loading="lazy" decoding="async" width="1000" height="1500"><figcaption>Maquette en perspective</figcaption></figure><figure><img src="images/interstice-03.webp" alt="Gros plan sur la paroi en cartons pliés en facettes et sur l’escalier blanc longé par des cordes" loading="lazy" decoding="async" width="1000" height="1500"><figcaption>Plan sur la cascade artificielle</figcaption></figure><figure><img src="images/interstice-04.webp" alt="Détail de l’escalier blanc bordé de cordes, devant les volumes en carton gris, sous la toile en gaze" loading="lazy" decoding="async" width="1000" height="1500"><figcaption>Tunnel passant dans la paroi</figcaption></figure><figure class="w4"><img src="images/interstice-05.webp" alt="Vue de côté de la maquette : garde-corps en cordes sur piquets de bois, paliers blancs et volumes en carton facettés couverts de film transparent" loading="lazy" decoding="async" width="1500" height="1000"><figcaption>Tunnel passant dans la paroi</figcaption></figure><figure><img src="images/interstice-06.webp" alt="Gros plan sur la manche de gaze suspendue à la toile du haut, au-dessus d’un palier bordé de cordes et de la paroi en carton" loading="lazy" decoding="async" width="1000" height="1500"><figcaption>Cordage permettant l’ascension sur une toile tendue</figcaption></figure><figure><img src="images/interstice-07.webp" alt="Maquette d’étude en carton : tour à quatre montants, escaliers pliés, volumes facettés et tissus jaune, rouge et blanc au sommet" loading="lazy" decoding="async" width="1000" height="1500"><figcaption>Maquette d’étude en carton</figcaption></figure><figure class="mid"><img src="images/interstice-08.webp" alt="Gros plan sur la maquette d’étude : volumes facettés en carton, escalier plissé et piquets en bois" loading="lazy" decoding="async" width="1500" height="1000"><figcaption>Maquette d’étude en carton</figcaption></figure></article>
+  <article class="proj" id="p-hellfest" data-card="hellfest" hidden><h1></h1><p class="desc"></p><div class="grow" style="--cols:1570fr 2212fr"><figure><img src="images/hellfest-01.webp" alt="Plan de zoning de l’exposition : accueil, zone 1 Hellfest, zone 2 instruments, zone 3 groupes incontournables et zone commodités au centre" loading="lazy" decoding="async" width="1264" height="805"><figcaption>Zoning</figcaption></figure><figure><img src="images/hellfest-02.webp" alt="Coupe dessinée à la main de l’exposition, 10 m de long sur 3,8 m de haut, avec étagères, vitrines et un visiteur à l’entrée" loading="lazy" decoding="async" width="1400" height="633"><figcaption>Coupe</figcaption></figure></div><div class="grow" style="--cols:1500fr 1580fr 1500fr"><figure><img src="images/hellfest-03.webp" alt="Maquette en carton de l’exposition vue en angle, avec ses cloisons courbes et sa salle centrale" loading="lazy" decoding="async" width="1400" height="933"><figcaption>Maquette</figcaption></figure><figure><img src="images/hellfest-04.webp" alt="Maquette en carton de l’exposition vue de dessus, avec la salle centrale et les zones autour" loading="lazy" decoding="async" width="839" height="531"><figcaption>Vue de dessus</figcaption></figure><figure><img src="images/hellfest-05.webp" alt="Maquette en carton de l’exposition vue de face, avec la salle centrale ovale et les espaces autour" loading="lazy" decoding="async" width="1400" height="933"><figcaption>Maquette</figcaption></figure></div><div class="grow" style="--cols:1138fr 1297fr"><figure><img src="images/hellfest-06.webp" alt="Perspective de la zone 1 : mur rouge « L’art du tatouage », panneaux numérotés suspendus et visiteur devant une étagère, sous un plafond noir" loading="lazy" decoding="async" width="989" height="869"><figcaption>Zone 1</figcaption></figure><figure><img data-main alt="" width="1135" height="875"><figcaption>Zone 2</figcaption></figure></div><div class="gal3"><figure><img src="images/hellfest-07.webp" alt="Quatre planches d’inspiration : zone 1 Hellfest, zone 2 instruments, zone 3 groupe iconique et commodités" loading="lazy" decoding="async" width="1020" height="756"><figcaption>Travail de veille</figcaption></figure></div></article>
+  <p class="projfoot"><a class="cvlink" href="#realisation">Retour aux réalisations</a></p>
+</div>
+</div>
+<script>
+(function(){
+  var scene=document.getElementById('rscene'),ring=document.getElementById('rring'),cards=[].slice.call(ring.children),
+      prev=document.getElementById('rprev'),next=document.getElementById('rnext'),count=document.getElementById('rcount'),
+      live=document.getElementById('rlive'),ctrl=document.getElementById('rctrl'),hint=document.getElementById('rhint');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,N=cards.length,STEP=360/N;
+  var ang=0,target=0,rest=0,raf=0,snapT=0,cur=0,drag=null;
+  scene.classList.add('on');ctrl.hidden=false;hint.hidden=false;
+
+  function fit(c){
+    var p=c.querySelector('.txt p'),t=c.querySelector('.txt'),im=c.querySelector('img');if(!p)return;
+    if(!p.dataset.full)p.dataset.full=p.textContent;
+    var full=p.dataset.full,max=im.offsetHeight*1.5;p.textContent=full;
+    if(!max||t.offsetHeight<=max)return;
+    var w=full.split(' '),lo=0,hi=w.length-1;
+    function tx(n){return w.slice(0,n).join(' ').replace(/[\s,;:.!?\u2026-]+$/,'')+'...'}
+    while(lo<hi){var mid=Math.ceil((lo+hi)/2);p.textContent=tx(mid);if(t.offsetHeight<=max)lo=mid;else hi=mid-1}
+    p.textContent=tx(lo);
+  }
+  function size(){
+    ring.style.height='';cards.forEach(function(c){c.style.height='auto'});
+    cards.forEach(fit);
+    var h=0;cards.forEach(function(c){h=Math.max(h,c.offsetHeight)});
+    ring.style.height=h+'px';cards.forEach(function(c){c.style.height=h+'px'});
+  }
+  function draw(){
+    ring.style.setProperty('--ang',ang.toFixed(2)+'deg');
+    var i=((Math.round(-ang/STEP)%N)+N)%N;
+    if(i!==cur){cur=i;count.textContent=(i+1)+' / '+N;live.textContent='Projet '+(i+1)+' sur '+N+' : '+cards[i].querySelector('h3').textContent}
+  }
+  function tick(){
+    var d=target-ang;
+    if(reduce||Math.abs(d)<.05){ang=target;draw();raf=0;return}
+    ang+=d*.14;draw();raf=requestAnimationFrame(tick);
+  }
+  function go(){if(!raf)raf=requestAnimationFrame(tick)}
+  function settle(){
+    var d=target-rest,n=Math.round(d/STEP);
+    if(n===0&&Math.abs(d)>12)n=d>0?1:-1;
+    rest=rest+n*STEP;target=rest;go();
+  }
+  function stepBy(n){clearTimeout(snapT);rest=Math.round(target/STEP)*STEP;rest+=n*STEP;target=rest;go()}
+
+  scene.addEventListener('wheel',function(e){
+    if(!e.target.closest('.card'))return;
+    e.preventDefault();
+    var d=Math.abs(e.deltaY)>=Math.abs(e.deltaX)?e.deltaY:e.deltaX;
+    if(e.deltaMode===1)d*=16;
+    target-=d*.45;go();
+    clearTimeout(snapT);snapT=setTimeout(settle,160);
+  },{passive:false});
+
+  scene.addEventListener('pointerdown',function(e){
+    if(!e.target.closest('.card')||(e.pointerType==='mouse'&&e.button!==0))return;
+    drag={x:e.clientX,y:e.clientY,t:target,moved:0,card:e.target.closest('.card')};clearTimeout(snapT);
+    try{scene.setPointerCapture(e.pointerId)}catch(_){}
+  });
+  scene.addEventListener('pointermove',function(e){
+    if(!drag)return;drag.moved=Math.max(drag.moved,Math.abs(e.clientX-drag.x),Math.abs(e.clientY-drag.y));target=drag.t+(e.clientX-drag.x)*.35;go();
+  });
+  function end(e){if(!drag)return;var d=drag;drag=null;settle();if(e&&e.type==='pointerup'&&d.moved<6&&d.card&&d.card.dataset.proj)location.hash='projet-'+d.card.dataset.proj}
+  scene.addEventListener('pointerup',end);
+  scene.addEventListener('pointercancel',end);
+
+  prev.addEventListener('click',function(){stepBy(1)});
+  next.addEventListener('click',function(){stepBy(-1)});
+  scene.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'){e.preventDefault();stepBy(-1)}
+    else if(e.key==='ArrowLeft'){e.preventDefault();stepBy(1)}
+    else if(e.key==='Enter'){var c=cards[cur];if(c&&c.dataset.proj){e.preventDefault();location.hash='projet-'+c.dataset.proj}}
+  });
+
+  window.addEventListener('resize',size);window.addEventListener('load',size);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(size);
+  size();draw();
+})();
+</script>
+<script>
+(function(){
+  var projs=[].slice.call(document.querySelectorAll('.proj'));
+  projs.forEach(function(p){
+    var card=document.querySelector('.card[data-proj="'+p.getAttribute('data-card')+'"]');if(!card)return;
+    var h1=p.querySelector('h1'),d=p.querySelector('.desc'),im=p.querySelector('img[data-main]'),ci=card.querySelector('img');
+    h1.textContent=card.querySelector('h3').textContent;
+    var cp=card.querySelector('p');if(!d.textContent.trim()&&cp)d.textContent=cp.dataset.full||cp.textContent;
+    if(im&&ci){im.src=ci.src;im.alt=ci.alt}
+  });
+  function theme(key){
+    var r=document.documentElement.style,vars=['--bg','--ink','--muted','--line','--red','--blue'];
+    vars.forEach(function(v){r.removeProperty(v)});
+    var card=key&&document.querySelector('.card[data-proj="'+key+'"]');
+    if(!card)return;
+    var hex=card.style.getPropertyValue('--c').trim().replace('#',''),
+        c=[0,2,4].map(function(i){return parseInt(hex.substr(i,2),16)}),
+        b=(getComputedStyle(document.body).backgroundColor.match(/[\d.]+/g)||[237,240,242]).slice(0,3).map(Number),
+        k=.6,mix=c.map(function(v,i){return Math.round(v*k+b[i]*(1-k))}),
+        lum=(.2126*mix[0]+.7152*mix[1]+.0722*mix[2])/255,
+        bg='rgb('+mix.join(',')+')',on=lum>.5?'#12151A':'#ffffff';
+    r.setProperty('--bg',bg);r.setProperty('--ink',on);
+    r.setProperty('--muted','color-mix(in srgb,'+on+' 72%,'+bg+')');
+    r.setProperty('--line','color-mix(in srgb,'+on+' 28%,'+bg+')');
+    r.setProperty('--red',on);r.setProperty('--blue',on);
+  }
+  function route(){
+    var hash=location.hash,cv=hash==='#cv',lg=hash==='#mentions-legales',m=/^#projet-([a-z0-9-]+)$/.exec(hash),
+        key=m&&document.getElementById('p-'+m[1])?m[1]:null,
+        h=document.getElementById('home'),c=document.getElementById('cvpage'),pp=document.getElementById('projpage'),lp=document.getElementById('legalpage'),was=h.hidden;
+    h.hidden=cv||lg||!!key;c.hidden=!cv;pp.hidden=!key;lp.hidden=!lg;
+    projs.forEach(function(p){p.hidden=!(key&&p.id==='p-'+key)});
+    theme(key);
+    document.title=cv?'CV de Flavien Baldacci':lg?'Mentions légales – Flavien Baldacci':key?document.querySelector('#p-'+key+' h1').textContent+' – Flavien Baldacci':'Flavien Baldacci, portfolio de scénographie';
+    if(cv||lg||key){window.scrollTo(0,0);return}
+    if(was){
+      window.dispatchEvent(new Event('resize'));
+      var id=hash.slice(1),el=id&&document.getElementById(id);
+      if(el)el.scrollIntoView();else window.scrollTo(0,0);
+    }
+  }
+  window.addEventListener('hashchange',route);route();
+})();
+</script>
+<script>
+(function(){
+  var bar=document.getElementById('menu'),inp=document.getElementById('sq'),box=document.getElementById('sres'),idx=null,sel=-1;
+  function clean(s){return s.replace(/\s+/g,' ').trim()}
+  function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’]/g,"'")}
+  function add(kind,title,body,alt,hash){
+    body=clean(body);alt=clean(alt||'');
+    idx.push({kind:kind,title:title,body:body,alt:alt,hash:hash,nt:norm(title),nb:norm(body),na:norm(alt)});
+  }
+  function build(){
+    idx=[];
+    var hero=document.querySelector('.hero');
+    if(hero)add('Accueil','Flavien Baldacci',hero.textContent,'','apropos');
+    [].forEach.call(document.querySelectorAll('#home .cv .row'),function(r){
+      var h=r.querySelector('h2');if(!h)return;
+      var t=clean(h.textContent);
+      if(!r.id)r.id='sec-'+norm(t).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      add('Section',t,r.textContent.replace(h.textContent,''),'',r.id);
+    });
+    add('Section','Réalisations','Projets de scénographie : carrousel de réalisations','','realisation');
+    var f=document.getElementById('contact');if(f)add('Section','Contact',f.textContent,'','contact');
+    add('Page','Mon CV','CV complet, télécharger en PDF, formation, expériences','','cv');
+    var lg=document.getElementById('legalpage');if(lg)add('Page','Mentions légales',lg.textContent,'','mentions-legales');
+    [].forEach.call(document.querySelectorAll('.proj'),function(p){
+      var h=p.querySelector('h1');if(!h)return;
+      var alts=[].map.call(p.querySelectorAll('img[alt]'),function(i){return i.alt}).join(' · ');
+      add('Réalisation',clean(h.textContent),p.textContent.replace(h.textContent,''),alts,'projet-'+p.id.replace(/^p-/,''));
+    });
+  }
+  function hl(el,text,toks){
+    var n=norm(text),r=[],m=[],p=0;
+    if(n.length===text.length){
+      toks.forEach(function(t){var i=0;while((i=n.indexOf(t,i))>-1){r.push([i,i+t.length]);i+=t.length}});
+      r.sort(function(a,b){return a[0]-b[0]});
+      r.forEach(function(x){var l=m[m.length-1];if(l&&x[0]<=l[1])l[1]=Math.max(l[1],x[1]);else m.push(x)});
+    }
+    m.forEach(function(x){
+      if(x[0]>p)el.appendChild(document.createTextNode(text.slice(p,x[0])));
+      var k=document.createElement('mark');k.textContent=text.slice(x[0],x[1]);el.appendChild(k);p=x[1];
+    });
+    if(p<text.length)el.appendChild(document.createTextNode(text.slice(p)));
+  }
+  function snippet(e,toks){
+    var src=e.body,ns=e.nb,pos=ns.indexOf(toks[0]);
+    if(pos<0&&e.na){src=e.alt;ns=e.na;pos=ns.indexOf(toks[0])}
+    if(pos<0)pos=0;
+    var s=Math.max(0,pos-40),en=Math.min(src.length,pos+95);
+    return (s>0?'… ':'')+src.slice(s,en)+(en<src.length?' …':'');
+  }
+  function close(){box.hidden=true;inp.setAttribute('aria-expanded','false');sel=-1}
+  function links(){return [].slice.call(box.querySelectorAll('a'))}
+  function mark(){links().forEach(function(a,i){a.setAttribute('aria-selected',i===sel?'true':'false');if(i===sel)a.scrollIntoView({block:'nearest'})})}
+  function render(){
+    var q=inp.value;
+    var toks=norm(q).split(/\s+/).filter(Boolean);
+    if(!toks.length){close();return}
+    if(!idx)build();
+    var out=[];
+    idx.forEach(function(e){
+      var s=0,ok=true;
+      toks.forEach(function(t){
+        var a=e.nt.indexOf(t)>-1,b=e.nb.indexOf(t)>-1,c=e.na.indexOf(t)>-1;
+        if(!a&&!b&&!c){ok=false;return}
+        s+=(a?5:0)+(b?2:0)+(c?1:0)+(e.nt.indexOf(t)===0?2:0);
+      });
+      if(ok)out.push({e:e,s:s});
+    });
+    out.sort(function(a,b){return b.s-a.s});
+    out=out.slice(0,8);
+    box.textContent='';sel=-1;
+    if(!out.length){
+      var d=document.createElement('div');d.className='none';d.textContent='Aucun résultat pour « '+clean(q)+' ».';box.appendChild(d);
+    }else out.forEach(function(o){
+      var a=document.createElement('a');a.href='#'+o.e.hash;a.setAttribute('role','option');a.setAttribute('aria-selected','false');
+      var k=document.createElement('span');k.className='k';k.textContent=o.e.kind;
+      var st=document.createElement('strong');hl(st,o.e.title,toks);
+      var sn=document.createElement('span');sn.className='s';hl(sn,snippet(o.e,toks),toks);
+      a.appendChild(k);a.appendChild(st);a.appendChild(sn);box.appendChild(a);
+    });
+    box.hidden=false;inp.setAttribute('aria-expanded','true');
+  }
+  inp.addEventListener('input',render);
+  inp.addEventListener('focus',function(){if(inp.value.trim())render()});
+  inp.addEventListener('keydown',function(e){
+    var l=links();
+    if(e.key==='Escape'){close();return}
+    if(e.key==='ArrowDown'&&l.length){e.preventDefault();sel=(sel+1)%l.length;mark()}
+    else if(e.key==='ArrowUp'&&l.length){e.preventDefault();sel=(sel<=0?l.length:sel)-1;mark()}
+    else if(e.key==='Enter'&&l.length){e.preventDefault();(l[sel>=0?sel:0]).click()}
+  });
+  box.addEventListener('click',function(e){if(e.target.closest('a')){close();inp.value='';inp.blur()}});
+  document.addEventListener('pointerdown',function(e){if(!bar.contains(e.target))close()});
+  window.addEventListener('hashchange',function(){close()});
+})();
+</script>
+<script>
+(function(){
+  var mb=document.getElementById('menubar'),btn=document.getElementById('menubtn'),menu=document.getElementById('menu'),
+      lab=btn.querySelector('.mlab'),html=document.documentElement,open=false,
+      pages=['home','cvpage','projpage','legalpage'].map(function(i){return document.getElementById(i)});
+  function onHome(){var h=location.hash;return !(h==='#cv'||h==='#mentions-legales'||/^#projet-/.test(h))}
+  var links=[].slice.call(mb.querySelectorAll('.mlinks a')),ptm=0;
+  function aim(){
+    var wrap=mb.querySelector('.mlinks'),W=wrap.offsetWidth,half=mb.offsetWidth/2;
+    links.forEach(function(a){a.style.setProperty('--dx',((W-(a.offsetLeft+a.offsetWidth/2))-half).toFixed(1)+'px')});
+  }
+  function upd(){
+    var col=open||!onHome()||(window.scrollY||0)>40,was=mb.classList.contains('col');
+    if(col===was)return;
+    if(col){
+      aim();mb.classList.add('col');
+      if(!open&&onHome()){clearTimeout(ptm);ptm=setTimeout(function(){mb.classList.remove('pulse');void mb.offsetWidth;mb.classList.add('pulse');setTimeout(function(){mb.classList.remove('pulse')},600)},560)}
+    }else mb.classList.remove('col');
+  }
+  function set(o){
+    var had=menu.contains(document.activeElement);
+    open=o;menu.classList.toggle('open',o);menu.inert=!o;html.classList.toggle('menu-open',o);
+    pages.forEach(function(p){if(p)p.inert=o});
+    btn.setAttribute('aria-expanded',o?'true':'false');lab.textContent=o?'Fermer':'Menu';
+    upd();
+    if(o){var f=menu.querySelector('.mnav a');if(f)setTimeout(function(){f.focus({preventScroll:true})},60)}
+    else if(had)btn.focus({preventScroll:true});
+  }
+  btn.addEventListener('click',function(){set(!open)});
+  menu.addEventListener('click',function(e){
+    if(e.target.closest('a')){set(false);return}
+    if(!e.target.closest('.msearch'))set(false);
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open)set(false)});
+  addEventListener('scroll',upd,{passive:true});
+  addEventListener('hashchange',function(){if(open)set(false);else upd()});
+  addEventListener('resize',aim);
+  aim();upd();
+})();
+</script>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,
+      fine=matchMedia('(hover: hover) and (pointer: fine)').matches;
+  /* apparition au scroll */
+  if(!reduce&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    [].forEach.call(document.querySelectorAll('.hero h1,.hero p,.hero .cta,.photo,.cv .row,.reali .head,#contact h2,#contact p:not(.legalink)'),function(el){el.classList.add('rv');io.observe(el)});
+  }
+  /* parallaxe de la partie « À propos » */
+  var about=document.getElementById('about');
+  if(about&&!reduce){
+    var cfg=[['.hero>div',.07,50],['.photo',-.14,70],['.cv .row:not(.skills)>h2',.06,16],['.cv .row:not(.skills)>div',-.03,12]],items=[];
+    cfg.forEach(function(c){[].forEach.call(about.querySelectorAll(c[0]),function(el){items.push({el:el,s:c[1],m:c[2],y:0})})});
+    var pq=false;
+    function pupd(){
+      pq=false;
+      var vh=innerHeight,mid=vh/2;
+      items.forEach(function(it){
+        if(it.el.offsetParent===null)return;
+        var r=it.el.getBoundingClientRect(),c=r.top+r.height/2-it.y;
+        if(c<-vh||c>vh*2)return;
+        var y=Math.max(-it.m,Math.min(it.m,(mid-c)*it.s));
+        if(Math.abs(y-it.y)>.1){it.y=y;it.el.style.transform='translate3d(0,'+y.toFixed(1)+'px,0)'}
+      });
+    }
+    function pask(){if(!pq){pq=true;requestAnimationFrame(pupd)}}
+    addEventListener('scroll',pask,{passive:true});addEventListener('resize',pask);addEventListener('hashchange',pask);pask();
+  }
+  /* boutons magnétiques */
+  if(fine&&!reduce){
+    var mags=[].slice.call(document.querySelectorAll('.cvlink,.ctrl button,.v3d .bar button,header.top nav a,#contact p:not(.legalink) a')),
+        px=-999,py=-999,mq=false,R=40;
+    mags.forEach(function(m){m.classList.add('mag');m._x=0;m._y=0});
+    function mupd(){
+      mq=false;
+      mags.forEach(function(m){
+        var r=m.getBoundingClientRect();if(!r.width)return;
+        var cx=r.left+r.width/2-m._x,cy=r.top+r.height/2-m._y,dx=px-cx,dy=py-cy,
+            d=Math.hypot(Math.max(Math.abs(dx)-r.width/2,0),Math.max(Math.abs(dy)-r.height/2,0)),
+            tx=0,ty=0,near=d<R;
+        if(near){tx=Math.max(-4,Math.min(4,dx*.09));ty=Math.max(-4,Math.min(4,dy*.11))}
+        if(Math.abs(tx-m._x)<.2&&Math.abs(ty-m._y)<.2&&(near||(!m._x&&!m._y)))return;
+        m._x=tx;m._y=ty;
+        m.style.transition=near?'transform .15s ease-out':'transform .55s cubic-bezier(.2,1.6,.4,1)';
+        m.style.transform=near||tx||ty?'translate3d('+tx.toFixed(1)+'px,'+ty.toFixed(1)+'px,0)':'';
+      });
+    }
+    function mask(){if(!mq){mq=true;requestAnimationFrame(mupd)}}
+    addEventListener('pointermove',function(e){if(e.pointerType!=='mouse')return;px=e.clientX;py=e.clientY;mask()},{passive:true});
+    addEventListener('scroll',mask,{passive:true});
+    document.documentElement.addEventListener('mouseleave',function(){px=py=-999;mask()});
+  }
+})();
+</script>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,
+      fine=matchMedia('(hover: hover) and (pointer: fine)').matches;
+  /* titres des cartes du carrousel : glitch */
+  [].forEach.call(document.querySelectorAll('.card h3'),function(h){
+    var t=h.textContent,sp=document.createElement('span');
+    sp.className='glitch';sp.setAttribute('data-text',t);sp.textContent=t;h.textContent='';h.appendChild(sp);
+  });
+  /* écran de chargement glitch entre les pages */
+  var glt=document.getElementById('glt'),gtm;
+  function view(){var h=location.hash;return h==='#cv'?'cv':h==='#mentions-legales'?'legal':/^#projet-/.test(h)?h:'home'}
+  var last=view();
+  addEventListener('hashchange',function(){
+    var v=view();if(v===last)return;last=v;
+    if(v==='home'||reduce||!glt)return;
+    clearTimeout(gtm);
+    glt.classList.add('on');
+    gtm=setTimeout(function(){glt.classList.remove('on')},260);
+  });
+  if(!fine||reduce)return;
+  /* glitch aléatoire : calme, léger, très fort, au hasard, tant que le survol dure */
+  var NEXT={0:[[2,.55],[1,.45]],1:[[0,.4],[2,.6]],2:[[1,.65],[0,.35]]},DUR={0:[1200,3200],1:[600,1700],2:[800,2200]};
+  function pick(p){var r=Math.random(),a=NEXT[p],acc=0;for(var i=0;i<a.length;i++){acc+=a[i][1];if(r<acc)return a[i][0]}return a[a.length-1][0]}
+  [].forEach.call(document.querySelectorAll('.glitch'),function(el){
+    var src=el.closest('.card')||el,tm=0;
+    function set(p){el.setAttribute('data-g',p);var d=DUR[p];tm=setTimeout(function(){set(pick(p))},d[0]+Math.random()*(d[1]-d[0]))}
+    src.addEventListener('pointerenter',function(e){if(e.pointerType!=='mouse')return;clearTimeout(tm);set(1)});
+    src.addEventListener('pointerleave',function(){clearTimeout(tm);el.setAttribute('data-g','0')});
+  });
+  /* cartes du carrousel : inclinaison 3D légère au survol */
+  [].forEach.call(document.querySelectorAll('.card'),function(c){
+    var f=c.querySelector('.front');if(!f)return;
+    c.addEventListener('pointermove',function(e){
+      if(e.pointerType!=='mouse')return;
+      var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      f.style.transform='perspective(900px) rotateX('+(-y*12).toFixed(2)+'deg) rotateY('+(x*14).toFixed(2)+'deg)';
+    });
+    c.addEventListener('pointerleave',function(){f.style.transform=''});
+  });
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" async></script>
+<script type="application/json" id="m3d-meta">{"bbox": [[-21.55791022827148, 0.0, -431.5857158081055], [207.57592842529297, 114.17320251464844, -50.72525401054382]], "mats": [{"color": [0.137, 0.137, 0.137, 1.0], "tex": null, "nv": 34510, "nt": 39997}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Wood__Floor.jpg", "nv": 239471, "nt": 145766, "uv": [[-147.5883026123047, -130.85110473632812], [297.31939697265625, 258.2304992675781]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Tile_Interior_05_1K.jpg", "nv": 4, "nt": 2, "uv": [[0.0, 0.0], [3.2451319694519043, 6.989515781402588]]}, {"color": [1.0, 1.0, 1.0, 1.0], "tex": null, "nv": 8193, "nt": 5074}, {"color": [0.729, 0.596, 0.631, 0.251], "tex": null, "nv": 96, "nt": 48}, {"color": [0.6, 0.6, 0.6, 1], "tex": "__Wood_Cherry_Original_1.jpg", "nv": 62650, "nt": 30860, "uv": [[-11.102049827575684, -13.506409645080566], [22.203880310058594, 24.612430572509766]]}, {"color": [0.298, 0.408, 0.227, 1.0], "tex": null, "nv": 13966, "nt": 17714}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Wood_Log_1K.png", "nv": 17476, "nt": 7794, "uv": [[-34.055118560791016, -1.4961999654769897], [68.11023712158203, 35.55131912231445]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Wood_Log_1K1.png", "nv": 16, "nt": 16, "uv": [[0.0, 7.775590896606445], [11.51574993133545, 26.27952766418457]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Terrazzo_1K.png", "nv": 2042, "nt": 826, "uv": [[-72.89750671386719, -96.37454223632812], [147.48867797851562, 191.64620971679688]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Structural_Concrete_1K.png", "nv": 12, "nt": 6, "uv": [[1.6860909461975098, 1.9685039520263672], [39.57566833496094, 30.37003517150879]]}, {"color": [0.012, 0.051, 0.122, 1.0], "tex": null, "nv": 22332, "nt": 30302}, {"color": [0.91, 0.714, 0.137, 1.0], "tex": null, "nv": 16962, "nt": 24196}, {"color": [0.643, 0.643, 0.643, 1.0], "tex": null, "nv": 2416, "nt": 2288}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Fabric_13_1K.png", "nv": 4824, "nt": 2736, "uv": [[-1.0, -1.2361459732055664], [2.0, 2.8984220027923584]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Wood__Floor_0.jpg", "nv": 18290, "nt": 9632, "uv": [[-0.184620201587677, -0.010567259974777699], [0.369240403175354, 0.8744791746139526]]}, {"color": [0.337, 0.337, 0.337, 1.0], "tex": null, "nv": 5328, "nt": 2916}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Terrazzo_1K_1.png", "nv": 2274, "nt": 810, "uv": [[-58.54404067993164, -54.28464889526367], [120.71366119384766, 190.78565979003906]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Wood_Log_1K1_2.png", "nv": 21846, "nt": 9596, "uv": [[-317.5174865722656, -289.72198486328125], [649.7003784179688, 694.8546142578125]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Fabric_13_1K_3.png", "nv": 920, "nt": 560, "uv": [[-0.5059999823570251, -1.4438230333738817e-15], [1.0119999647140503, 0.5438359975814819]]}, {"color": [0.6, 0.6, 0.6, 1], "tex": "Structural_Concrete_1K_4.png", "nv": 101740, "nt": 65320, "uv": [[-939.7576904296875, -581.0936889648438], [1880.5565185546875, 1391.9171142578125]]}], "cams": [{"name": "skp_camera_Last_Saved_SketchUp_View", "pos": [-229.1064, 197.5949, -14.31037], "dir": [0.8790079, -0.1856072, -0.4391983], "up": [0.1660352, 0.9826241, -0.08295986]}, {"name": "skp_camera_tout", "pos": [-334.4601, 320.5606, -703.2425], "dir": [0.7779288, -0.2658622, 0.5693366], "up": [0.214543, 0.964011, 0.1570159]}, {"name": "skp_camera_perspective_intérieur", "pos": [52.89403, 56.78335, -120.3704], "dir": [0.8331459, -0.0, -0.5530533], "up": [3.855073e-18, 1.0, 5.807466e-18]}, {"name": "skp_camera_axonométrie_éclatée", "pos": [-297.2552, 370.0917, -953.1271], "dir": [0.5212465, -0.3270897, 0.788235], "up": [0.1804186, 0.9449933, 0.2728311]}, {"name": "skp_camera_coupe_AA", "pos": [-656.5301, 57.08661, -169.502], "dir": [1.0, -0.0, -0.0], "up": [0.0, 1.0, 0.0]}], "tex": {"Wood__Floor.jpg": "3d/textures/wood_floor.jpg", "Tile_Interior_05_1K.jpg": "3d/textures/tile_interior_05_1k.jpg", "__Wood_Cherry_Original_1.jpg": "3d/textures/wood_cherry_original_1.jpg", "Wood_Log_1K.png": "3d/textures/wood_log_1k.jpg", "Wood_Log_1K1.png": "3d/textures/wood_log_1k1.jpg", "Terrazzo_1K.png": "3d/textures/terrazzo_1k.jpg", "Structural_Concrete_1K.png": "3d/textures/structural_concrete_1k.jpg", "Fabric_13_1K.png": "3d/textures/fabric_13_1k.jpg", "Wood__Floor_0.jpg": "3d/textures/wood_floor.jpg", "Terrazzo_1K_1.png": "3d/textures/terrazzo_1k.jpg", "Wood_Log_1K1_2.png": "3d/textures/wood_log_1k1.jpg", "Fabric_13_1K_3.png": "3d/textures/fabric_13_1k.jpg", "Structural_Concrete_1K_4.png": "3d/textures/structural_concrete_1k.jpg"}}</script>
+
+<script>(function(){
+var root=document.getElementById('v3d'); if(!root) return;
+var started=false;
+function msg(t){var m=document.getElementById('v3dMsg'); if(!m)return; if(t){m.textContent=t;m.style.display='grid';}else m.style.display='none';}
+function b64ToU8(b){var s=atob(b),u=new Uint8Array(s.length);for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u;}
+function inflate(u8){
+  if(window.DecompressionStream){
+    return new Response(new Blob([u8]).stream().pipeThrough(new DecompressionStream('deflate'))).arrayBuffer().then(function(b){return new Uint8Array(b);});
+  }
+  if(window.pako) return Promise.resolve(pako.inflate(u8));
+  return Promise.reject(new Error('inflate'));
+}
+function start(){
+  var meta;
+  try{meta=JSON.parse(document.getElementById('m3d-meta').textContent);}
+  catch(e){msg('Impossible de lire le modèle 3D.');return;}
+  fetch('3d/model.bin').then(function(r){if(!r.ok)throw new Error('http');return r.arrayBuffer();})
+    .then(function(b){return inflate(new Uint8Array(b));})
+    .then(function(raw){build(meta,raw);})
+    .catch(function(){msg('Impossible de charger le modèle 3D.');});
+}
+function build(meta,raw){
+  var stage=document.getElementById('v3dStage'),K=0.0254;
+  var canvas=document.createElement('canvas');
+  canvas.setAttribute('aria-label','Modèle 3D de la pièce en axonométrie éclatée, à faire tourner');
+  var gl=canvas.getContext('webgl2',{antialias:true,alpha:true})||canvas.getContext('webgl',{antialias:true,alpha:true});
+  if(!gl){msg('Ton navigateur ne permet pas d’afficher la 3D (WebGL indisponible).');return;}
+  var gl2=(typeof WebGL2RenderingContext!=='undefined')&&(gl instanceof WebGL2RenderingContext);
+  if(!gl2&&!gl.getExtension('OES_element_index_uint')){msg('Ce navigateur ne gère pas ce modèle 3D.');return;}
+  var aniso=gl.getExtension('EXT_texture_filter_anisotropic');
+  stage.insertBefore(canvas,stage.firstChild);
+  function sh(type,src){var s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(s));return s;}
+  var vs='attribute vec3 aPos;attribute vec3 aNrm;attribute vec2 aUv;uniform mat4 uVP;uniform vec3 uScale;uniform vec3 uOff;uniform vec2 uUvS;uniform vec2 uUvO;varying vec3 vN;varying vec2 vUv;'+
+   'void main(){vec3 w=aPos*uScale+uOff;gl_Position=uVP*vec4(w,1.0);vN=aNrm;vUv=aUv*uUvS+uUvO;}';
+  var fs='#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\n'+
+   'varying vec3 vN;varying vec2 vUv;uniform vec4 uColor;uniform float uUseTex;uniform sampler2D uTex;'+
+   'void main(){vec3 n=normalize(vN);if(!gl_FrontFacing)n=-n;'+
+   'vec3 L=normalize(vec3(-0.35,0.8,0.5));'+
+   'float l=0.42+0.30*(0.6+0.4*n.y)+0.5*max(dot(n,L),0.0);'+
+   'vec4 c=uColor;if(uUseTex>0.5)c.rgb=texture2D(uTex,vUv).rgb;'+
+   'vec3 rgb=c.rgb*l;gl_FragColor=vec4(rgb*c.a,c.a);}';
+  var prog;
+  try{prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,vs));gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,fs));
+    gl.bindAttribLocation(prog,0,'aPos');gl.bindAttribLocation(prog,1,'aNrm');gl.bindAttribLocation(prog,2,'aUv');gl.linkProgram(prog);
+    if(!gl.getProgramParameter(prog,gl.LINK_STATUS))throw new Error('link');}
+  catch(e){msg('Erreur d’affichage 3D sur ce navigateur.');return;}
+  gl.useProgram(prog);
+  var U={};['uVP','uScale','uOff','uUvS','uUvO','uColor','uUseTex','uTex'].forEach(function(n){U[n]=gl.getUniformLocation(prog,n);});
+  gl.uniform1i(U.uTex,0);
+  var lo=meta.bbox[0],hi=meta.bbox[1],dim=[(hi[0]-lo[0])*K,(hi[1]-lo[1])*K,(hi[2]-lo[2])*K];
+  var center=[(lo[0]+hi[0])/2*K,(lo[1]+hi[1])/2*K,(lo[2]+hi[2])/2*K];
+  var radius=Math.sqrt(dim[0]*dim[0]+dim[1]*dim[1]+dim[2]*dim[2])/2;
+  var dirty=true,visible=true;
+  var texCache={};
+  var white=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,white);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([255,255,255,255]));
+  function makeTex(uri){
+    if(texCache[uri])return texCache[uri];
+    var t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);
+    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([200,200,200,255]));
+    var img=new Image();
+    img.onload=function(){
+      gl.bindTexture(gl.TEXTURE_2D,t);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img);
+      gl.generateMipmap(gl.TEXTURE_2D);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.REPEAT);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.REPEAT);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+      if(aniso)gl.texParameterf(gl.TEXTURE_2D,aniso.TEXTURE_MAX_ANISOTROPY_EXT,Math.min(8,gl.getParameter(aniso.MAX_TEXTURE_MAX_ANISOTROPY_EXT)));
+      dirty=true;
+    };
+    img.src=uri;texCache[uri]=t;return t;
+  }
+  var off=0;
+  function take(n,T){var b=n*T.BYTES_PER_ELEMENT,a=new T(raw.buffer.slice(raw.byteOffset+off,raw.byteOffset+off+b));off+=b;return a;}
+  function buf(target,arr){var b=gl.createBuffer();gl.bindBuffer(target,b);gl.bufferData(target,arr,gl.STATIC_DRAW);return b;}
+  var parts=[];
+  meta.mats.forEach(function(m){
+    var nv=m.nv,p3=take(nv*3,Uint16Array),n3=take(nv*3,Int8Array),u2=m.uv?take(nv*2,Uint16Array):null,idx=take(m.nt*3,Uint32Array);
+    var P=new Uint16Array(nv*4),N=new Int8Array(nv*4),i;
+    for(i=0;i<nv;i++){P[i*4]=p3[i*3];P[i*4+1]=p3[i*3+1];P[i*4+2]=p3[i*3+2];N[i*4]=n3[i*3];N[i*4+1]=n3[i*3+1];N[i*4+2]=n3[i*3+2];}
+    var part={pb:buf(gl.ARRAY_BUFFER,P),nb:buf(gl.ARRAY_BUFFER,N),ub:u2?buf(gl.ARRAY_BUFFER,u2):null,ib:buf(gl.ELEMENT_ARRAY_BUFFER,idx),n:m.nt*3,
+      col:m.color,tex:(m.tex&&m.uv)?makeTex(meta.tex[m.tex]):null,uv:m.uv,alpha:m.color[3]<1&&!(m.tex&&m.uv)};
+    parts.push(part);
+  });
+  gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);
+  gl.enableVertexAttribArray(0);gl.enableVertexAttribArray(1);
+  gl.uniform3f(U.uScale,dim[0],dim[1],dim[2]);gl.uniform3f(U.uOff,lo[0]*K,lo[1]*K,lo[2]*K);
+  // camera state
+  var cam={t:center.slice(),d:radius*3,yaw:0,pitch:0.3},fov=35*Math.PI/180;
+  function eyeOf(c){var cp=Math.cos(c.pitch);return [c.t[0]+c.d*cp*Math.sin(c.yaw),c.t[1]+c.d*Math.sin(c.pitch),c.t[2]+c.d*cp*Math.cos(c.yaw)];}
+  function sub(a,b){return [a[0]-b[0],a[1]-b[1],a[2]-b[2]];}
+  function nrm(a){var l=Math.hypot(a[0],a[1],a[2])||1;return [a[0]/l,a[1]/l,a[2]/l];}
+  function cross(a,b){return [a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];}
+  function dot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2];}
+  function basis(c){var e=eyeOf(c),f=nrm(sub(c.t,e)),r=nrm(cross(f,[0,1,0])),u=cross(r,f);return {e:e,f:f,r:r,u:u};}
+  function vp(w,h){
+    var b=basis(cam),near=Math.max(0.03,cam.d*0.02),far=radius*14,t=1/Math.tan(fov/2),a=w/h;
+    var V=[b.r[0],b.u[0],-b.f[0],0,b.r[1],b.u[1],-b.f[1],0,b.r[2],b.u[2],-b.f[2],0,-dot(b.r,b.e),-dot(b.u,b.e),dot(b.f,b.e),1];
+    var P=[t/a,0,0,0,0,t,0,0,0,0,(far+near)/(near-far),-1,0,0,2*far*near/(near-far),0];
+    var o=new Float32Array(16);
+    for(var c=0;c<4;c++)for(var r=0;r<4;r++){var s=0;for(var k=0;k<4;k++)s+=P[k*4+r]*V[c*4+k];o[c*4+r]=s;}
+    return o;
+  }
+  function draw(){
+    var dpr=Math.min(window.devicePixelRatio||1,2),w=Math.max(2,Math.round(stage.clientWidth*dpr)),h=Math.max(2,Math.round(stage.clientHeight*dpr));
+    if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}
+    gl.viewport(0,0,w,h);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+    gl.uniformMatrix4fv(U.uVP,false,vp(w,h));
+    for(var pass=0;pass<2;pass++){
+      if(pass===1){gl.enable(gl.BLEND);gl.depthMask(false);}
+      parts.forEach(function(p){
+        if((pass===1)!==p.alpha)return;
+        gl.bindBuffer(gl.ARRAY_BUFFER,p.pb);gl.vertexAttribPointer(0,3,gl.UNSIGNED_SHORT,true,8,0);
+        gl.bindBuffer(gl.ARRAY_BUFFER,p.nb);gl.vertexAttribPointer(1,3,gl.BYTE,true,4,0);
+        if(p.ub){gl.enableVertexAttribArray(2);gl.bindBuffer(gl.ARRAY_BUFFER,p.ub);gl.vertexAttribPointer(2,2,gl.UNSIGNED_SHORT,true,4,0);gl.uniform2f(U.uUvS,p.uv[1][0],p.uv[1][1]);gl.uniform2f(U.uUvO,p.uv[0][0],p.uv[0][1]);}
+        else{gl.disableVertexAttribArray(2);gl.vertexAttrib2f(2,0,0);gl.uniform2f(U.uUvS,1,1);gl.uniform2f(U.uUvO,0,0);}
+        gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,p.tex||white);gl.uniform1f(U.uUseTex,p.tex?1:0);
+        gl.uniform4f(U.uColor,p.col[0],p.col[1],p.col[2],p.alpha?p.col[3]:1);
+        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,p.ib);gl.drawElements(gl.TRIANGLES,p.n,gl.UNSIGNED_INT,0);
+      });
+    }
+    gl.depthMask(true);gl.disable(gl.BLEND);
+  }
+  // saved SketchUp views
+  function viewFor(name){
+    var top=(name==='top'),want=top?'skp_camera_axonométrie_éclatée':name,c=null;
+    meta.cams.forEach(function(x){if(x.name===want)c=x;});if(!c)return null;
+    var dir=nrm(c.dir),v={};
+    var a=stage.clientWidth/Math.max(1,stage.clientHeight),hf=2*Math.atan(Math.tan(fov/2)*a),f=Math.min(fov,hf);
+    v.d=radius/Math.sin(f/2)*(top?1.0:0.9);v.t=center.slice();
+    v.yaw=Math.atan2(-dir[0],-dir[2]);v.pitch=top?1.5:Math.asin(Math.max(-1,Math.min(1,-dir[1])));
+    return v;
+  }
+  var anim=null;
+  function goTo(name,instant){
+    var v=viewFor(name);if(!v)return;
+    if(instant){cam=v;dirty=true;return;}
+    var dy=v.yaw-cam.yaw;while(dy>Math.PI)dy-=2*Math.PI;while(dy<-Math.PI)dy+=2*Math.PI;
+    anim={t0:performance.now(),a:{t:cam.t.slice(),d:cam.d,yaw:cam.yaw,pitch:cam.pitch},b:v,dy:dy};
+  }
+  var current='skp_camera_axonométrie_éclatée';goTo(current,true);
+  root.querySelectorAll('button[data-view]').forEach(function(b){
+    b.addEventListener('click',function(){
+      root.querySelectorAll('button[data-view]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      goTo(b.getAttribute('data-view'),false);
+    });
+  });
+  // pointer controls: drag = rotate, right/two-finger drag = pan, wheel/pinch = zoom
+  var ptrs={},last=null;
+  function clampPitch(){cam.pitch=Math.max(-1.5,Math.min(1.5,cam.pitch));}
+  function pan(dx,dy){var b=basis(cam),s=cam.d*2*Math.tan(fov/2)/Math.max(1,stage.clientHeight);
+    for(var i=0;i<3;i++)cam.t[i]+=(-b.r[i]*dx+b.u[i]*dy)*s;}
+  function zoom(f){cam.d=Math.max(0.1,Math.min(radius*6,cam.d*f));}
+  canvas.addEventListener('pointerdown',function(e){anim=null;canvas.setPointerCapture(e.pointerId);ptrs[e.pointerId]={x:e.clientX,y:e.clientY,b:e.button};last=null;});
+  canvas.addEventListener('pointermove',function(e){
+    var p=ptrs[e.pointerId];if(!p)return;var ids=Object.keys(ptrs);
+    if(ids.length===1){var dx=e.clientX-p.x,dy=e.clientY-p.y;
+      if(p.b===2||e.shiftKey)pan(dx,dy);else{cam.yaw-=dx*0.006;cam.pitch+=dy*0.006;clampPitch();}}
+    else if(ids.length===2){var o=ids[0]==e.pointerId?ptrs[ids[1]]:ptrs[ids[0]];
+      var d0=Math.hypot(p.x-o.x,p.y-o.y),d1=Math.hypot(e.clientX-o.x,e.clientY-o.y);
+      if(d1>0&&d0>0)zoom(d0/d1);
+      pan((e.clientX-p.x)/2,(e.clientY-p.y)/2);}
+    p.x=e.clientX;p.y=e.clientY;dirty=true;
+  });
+  function up(e){delete ptrs[e.pointerId];}
+  canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);
+  canvas.addEventListener('contextmenu',function(e){e.preventDefault();});
+  canvas.addEventListener('wheel',function(e){e.preventDefault();anim=null;zoom(Math.exp(e.deltaY*0.0012));dirty=true;},{passive:false});
+  if(window.ResizeObserver)new ResizeObserver(function(){dirty=true;}).observe(stage);else window.addEventListener('resize',function(){dirty=true;});
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible)dirty=true;}).observe(stage);
+  function loop(now){
+    if(anim){
+      var t=Math.min(1,(now-anim.t0)/800),e=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+      for(var i=0;i<3;i++)cam.t[i]=anim.a.t[i]+(anim.b.t[i]-anim.a.t[i])*e;
+      cam.d=anim.a.d+(anim.b.d-anim.a.d)*e;cam.yaw=anim.a.yaw+anim.dy*e;cam.pitch=anim.a.pitch+(anim.b.pitch-anim.a.pitch)*e;
+      if(t>=1)anim=null;dirty=true;
+    }
+    if(dirty&&visible){dirty=false;draw();}
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);msg('');
+  window.__v3d={goTo:goTo,cam:function(){return cam;}};
+}
+function init(){
+  if(!('IntersectionObserver' in window)){start();return;}
+  var io=new IntersectionObserver(function(es){if(!started&&es.some(function(e){return e.isIntersecting;})){started=true;io.disconnect();setTimeout(start,30);}});
+  io.observe(root);
+}
+if(document.readyState==='complete')init();else window.addEventListener('load',init);
+})();
+</script>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,
+      COL=['#D62A1F','#4FD1C1','#F4B71D','#2A5BA8','#B14AED','#FF2E93'],CAP={about:9,reali:6,cvpage:6,projpage:7},PX={sa:[-.22,110],sb:[.15,90],sc:[-.1,70]};
+  function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function texts(root){
+    var out=[],w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      if(!n.nodeValue.trim())return NodeFilter.FILTER_REJECT;
+      return n.parentElement&&n.parentElement.closest('.pxbg,.pxwrap,.scene,script,style,.sr')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),n,rg=document.createRange();
+    while((n=w.nextNode())){rg.selectNodeContents(n);[].forEach.call(rg.getClientRects(),function(r){if(r.width>0&&r.height>0)out.push(r)})}
+    return out;
+  }
+  function pad(r,p){return {left:r.left-p,right:r.right+p,top:r.top-p,bottom:r.bottom+p}}
+  function hit(a,b){return !(a.right<b.left||a.left>b.right||a.bottom<b.top||a.top>b.bottom)}
+  function dist(a,b){var dx=Math.max(b.left-a.right,a.left-b.right,0),dy=Math.max(b.top-a.bottom,a.top-b.bottom,0);return Math.hypot(dx,dy)}
+  function gen(pb,root,T,O,keep,key,seed){
+    [].forEach.call(pb.querySelectorAll('i.gen'),function(e){e.remove()});
+    var pr=pb.getBoundingClientRect();if(!pr.width||!pr.height)return;
+    var sc=innerWidth<=700?.6:1,R=rng(seed),tobs=T.map(function(r){return pad(r,16)}),obs=O.slice(),placed=[],
+        target=Math.min(CAP[key]||16,Math.round(pr.width*pr.height/150000)),made=0,html=[];
+    keep.forEach(function(r){obs.push(pad(r,26))});
+    for(var a=0;a<2200&&made<target;a++){
+      var h=34+Math.pow(R(),1.5)*200,he=h*sc,rot=R()*180-90,ar=rot*Math.PI/180,
+          hx=he/2*Math.abs(Math.sin(ar))+4,hy=he/2*Math.abs(Math.cos(ar))+4,
+          cx=pr.left+12+R()*(pr.width-24),cy=pr.top+12+R()*(pr.height-24),
+          bb={left:cx-hx,right:cx+hx,top:cy-hy,bottom:cy+hy},ok=true,i,near=1e9;
+      var cls=['sa','sb','sc'][Math.floor(R()*3)],mv=reduce?0:PX[cls][1],bt={left:bb.left,right:bb.right,top:bb.top-mv,bottom:bb.bottom+mv};
+      for(i=0;i<tobs.length;i++){if(hit(bt,tobs[i])){ok=false;break}}
+      if(!ok)continue;
+      for(i=0;i<obs.length;i++){if(hit(bb,obs[i])){ok=false;break}}
+      if(!ok)continue;
+      for(i=0;i<placed.length;i++){var p=placed[i];if(Math.hypot(p.x-cx,p.y-cy)<(p.he+he)/4+70){ok=false;break}}
+      if(!ok)continue;
+      for(i=0;i<T.length;i++)near=Math.min(near,dist(bb,T[i]));
+      var g=Math.max(.35,Math.min(1.35,near/240))*(.8+R()*.4),k=.55+R()*.45;
+      placed.push({x:cx,y:cy,he:he});made++;
+      html.push('<i class="gen '+cls+'" style="--c:'+COL[Math.floor(R()*COL.length)]+';--h:'+h.toFixed(0)+'px;--r:'+rot.toFixed(0)+'deg;--t:'+(4.5+R()*3).toFixed(1)+'s;--g:'+g.toFixed(2)+';--k:'+k.toFixed(2)+
+        ';left:'+(((cx-pr.left)-4)/pr.width*100).toFixed(2)+'%;top:'+(((cy-pr.top)-he/2)/pr.height*100).toFixed(2)+'%;animation-delay:-'+(R()*5).toFixed(1)+'s"></i>');
+    }
+    pb.insertAdjacentHTML('beforeend',html.join(''));
+  }
+  function run(){
+    ['home','cvpage','projpage'].forEach(function(id){
+      var root=document.getElementById(id);if(!root||root.hidden)return;
+      [].forEach.call(root.querySelectorAll('.pxbg i.gen'),function(e){e.remove()});
+      var sticks=[].slice.call(root.querySelectorAll('.pxbg i')),keep=[];
+      sticks.forEach(function(s){s.classList.remove('cull')});
+      var T=texts(root);
+      sticks.forEach(function(s,idx){
+        var m=reduce?0:PX[s.classList.contains('sa')?'sa':s.classList.contains('sb')?'sb':'sc'][1],
+            tm=/translate3d\(0(?:px)?,\s*(-?[\d.]+)px/.exec(s.style.transform||''),y=tm?parseFloat(tm[1]):0,
+            r=s.getBoundingClientRect();
+        if(!r.width&&!r.height)return;
+        var top=r.top-y-m-10,bot=r.bottom-y+m+10,l=r.left-10,rr=r.right+10,bad=false;
+        for(var i=0;i<T.length;i++){var t=T[i];
+          if(!(t.right<l||t.left>rr||t.bottom<top||t.top>bot)){bad=true;break}}
+        if(bad||idx%2===1)s.classList.add('cull');else keep.push({left:r.left,right:r.right,top:r.top-y,bottom:r.bottom-y});
+      });
+      var O=[];
+      [].forEach.call(root.querySelectorAll('img,.card,.v3d,.cvbar,.ctrl'),function(e){
+        if(e.closest('.pxbg'))return;var r=e.getBoundingClientRect();if(r.width>0&&r.height>0)O.push(pad(r,4))});
+      [].forEach.call(root.querySelectorAll('.pxbg'),function(pb,n){
+        var w=pb.closest('.about,.reali'),key=w?(w.classList.contains('about')?'about':'reali'):id;
+        gen(pb,root,T,O,keep,key,17+n*101+id.length*13);
+      });
+    });
+  }
+  var pq=false;
+  function pupd(){
+    pq=false;if(reduce)return;
+    var vh=innerHeight,mid=vh/2;
+    [].forEach.call(document.querySelectorAll('.pxbg i'),function(el){
+      if(el.offsetParent===null)return;
+      var k=el.classList.contains('sa')?'sa':el.classList.contains('sb')?'sb':'sc',P=PX[k],
+          y0=el._y||0,r=el.getBoundingClientRect(),c=r.top+r.height/2-y0;
+      if(c<-vh||c>vh*2)return;
+      var y=Math.max(-P[1],Math.min(P[1],(mid-c)*P[0]));
+      if(Math.abs(y-y0)>.1){el._y=y;el.style.transform='translate3d(0,'+y.toFixed(1)+'px,0)'}
+    });
+  }
+  function pask(){if(!pq){pq=true;requestAnimationFrame(pupd)}}
+  addEventListener('scroll',pask,{passive:true});addEventListener('resize',pask);addEventListener('hashchange',pask);
+  var tm=0;function later(d){clearTimeout(tm);tm=setTimeout(function(){run();pask()},d)}
+  addEventListener('load',function(){later(50);setTimeout(function(){run();pask()},900)});
+  addEventListener('resize',function(){later(250)});
+  addEventListener('hashchange',function(){later(60);setTimeout(run,700)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){later(50)});
+  later(100);
+})();
+</script>
+</body>
+</html>
